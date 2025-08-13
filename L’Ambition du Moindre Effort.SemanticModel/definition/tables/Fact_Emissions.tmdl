@@ -1,0 +1,272 @@
+table Fact_Emissions
+	lineageTag: e5285035-9abd-4e81-9fd5-5a3fdeed331d
+
+	column Pays
+		dataType: string
+		lineageTag: 3769beb5-eb8a-40ae-b4bd-2e5dc0a245a2
+		summarizeBy: none
+		sourceColumn: Pays
+
+		annotation SummarizationSetBy = Automatic
+
+	column Année
+		dataType: int64
+		formatString: 0
+		lineageTag: 5c36ce2b-fa7a-49d7-8afe-b6f2356eb7c9
+		summarizeBy: none
+		sourceColumn: Année
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code ISO'
+		dataType: string
+		isHidden
+		lineageTag: 05248b30-90dd-4c59-9da8-0f8572665775
+		summarizeBy: none
+		sourceColumn: Code ISO
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Population
+		dataType: double
+		lineageTag: f2c462da-05ed-4013-96da-511bc7e895d5
+		summarizeBy: none
+		sourceColumn: Population
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2_ciment_Mt
+		dataType: double
+		lineageTag: e65d3533-87fe-4a6c-b466-c58392ac41e6
+		summarizeBy: none
+		sourceColumn: CO2_ciment_Mt
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2_total_Mt
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 94a74278-0d61-443a-988a-8f7676e83178
+		summarizeBy: none
+		sourceColumn: CO2_total_Mt
+
+		annotation SummarizationSetBy = User
+
+	column CO2_par_habitant
+		dataType: double
+		lineageTag: fc1127c0-444f-45c6-b89b-672959f7ec83
+		summarizeBy: none
+		sourceColumn: CO2_par_habitant
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2_par_PIB
+		dataType: double
+		lineageTag: 06240551-8668-4b95-b31f-9c90f34f9545
+		summarizeBy: none
+		sourceColumn: CO2_par_PIB
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2_charbon_Mt
+		dataType: double
+		lineageTag: cf4ece64-e09b-4110-9af4-88be1ceca26a
+		summarizeBy: none
+		sourceColumn: CO2_charbon_Mt
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2_consommation_Mt
+		dataType: double
+		lineageTag: dc53aca7-d8f2-4d63-b0b6-95a53505bb55
+		summarizeBy: none
+		sourceColumn: CO2_consommation_Mt
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2_torchage_Mt
+		dataType: double
+		lineageTag: 40bb3e1d-b928-4e23-9151-bb9d0dd8c64f
+		summarizeBy: none
+		sourceColumn: CO2_torchage_Mt
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2_gaz_Mt
+		dataType: double
+		lineageTag: 2400bc37-f9f8-46b3-9a1e-7811efc1a473
+		summarizeBy: none
+		sourceColumn: CO2_gaz_Mt
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Méthane_Mt
+		dataType: double
+		lineageTag: ac0318a9-afe1-4ad0-bfbb-672ef5ab4e44
+		summarizeBy: none
+		sourceColumn: Méthane_Mt
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column N2O_Mt
+		dataType: double
+		lineageTag: dcf86793-6198-4eb6-8418-8aab15993ed0
+		summarizeBy: none
+		sourceColumn: N2O_Mt
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2_pétrole_Mt
+		dataType: double
+		lineageTag: 4883a2f5-4dd3-43b9-919a-704d159e093b
+		summarizeBy: none
+		sourceColumn: CO2_pétrole_Mt
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column GES_total_Mt
+		dataType: double
+		lineageTag: 9520fa95-37f3-48ee-aba1-9cebc967cdd8
+		summarizeBy: none
+		sourceColumn: GES_total_Mt
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Fact_Emissions = m
+		mode: import
+		queryGroup: 'Tables de faits'
+		source = ```
+				let
+				    // Chargement de la feuille "Data"
+				    Source = Excel.Workbook(File.Contents("C:\Users\8806641L\Downloads\owid-co2-data (1).xlsx"), null, true),
+				    Data_Sheet = Source{[Item="Data",Kind="Sheet"]}[Data],
+				    #"En-têtes promus" = Table.PromoteHeaders(Data_Sheet, [PromoteAllScalars=true]),
+				
+				    // Garder uniquement les colonnes utiles
+				    ColonnesUtilePourAnalyse = Table.SelectColumns(#"En-têtes promus",{
+				        "country", "year", "iso_code", "population", "gdp", "cement_co2", "co2", 
+				        "co2_growth_abs", "co2_growth_prct", "co2_per_capita", "co2_per_gdp", 
+				        "coal_co2", "consumption_co2", "flaring_co2", "gas_co2", 
+				        "methane", "nitrous_oxide", "oil_co2", "total_ghg"
+				    }),
+				
+				    // Filtrer les années entre 1960 et 2020
+				    #"Filtre_date" = Table.SelectRows(ColonnesUtilePourAnalyse, each [year] >= 1960 and [year] <= 2020),
+				
+				    // Garder uniquement les pays avec un code ISO valide
+				    FiltrerPaysAvecISO = Table.SelectRows(#"Filtre_date", each ([iso_code] <> null)),
+				
+				    // Renommer les colonnes et définir les types
+				    RenommeColonnesTechniques = Table.TransformColumnTypes(
+				        Table.RenameColumns(FiltrerPaysAvecISO, {
+				            {"country", "Pays"},
+				            {"iso_code", "Code ISO"},
+				            {"year", "Année"},
+				            {"population", "Population"},
+				            {"gdp", "PIB_USD"},
+				            {"co2", "CO2_total_Mt"},
+				            {"co2_per_capita", "CO2_par_habitant"},
+				            {"methane", "Méthane_Mt"},
+				            {"nitrous_oxide", "N2O_Mt"},
+				            {"total_ghg", "GES_total_Mt"},
+				            {"coal_co2", "CO2_charbon_Mt"},
+				            {"oil_co2", "CO2_pétrole_Mt"},
+				            {"gas_co2", "CO2_gaz_Mt"},
+				            {"cement_co2", "CO2_ciment_Mt"},
+				            {"flaring_co2", "CO2_torchage_Mt"},
+				            {"co2_growth_abs", "Croissance_CO2_Mt"},
+				            {"co2_growth_prct", "Croissance_CO2_%"},
+				            {"co2_per_gdp", "CO2_par_PIB"},
+				            {"consumption_co2", "CO2_consommation_Mt"}
+				        }),
+				        {
+				            {"Pays", type text},
+				            {"Code ISO", type text},
+				            {"Année", Int64.Type},
+				            {"Population", type number},
+				            {"PIB_USD", type number},
+				            {"CO2_total_Mt", type number},
+				            {"CO2_par_habitant", type number},
+				            {"Méthane_Mt", type number},
+				            {"N2O_Mt", type number},
+				            {"GES_total_Mt", type number},
+				            {"CO2_charbon_Mt", type number},
+				            {"CO2_pétrole_Mt", type number},
+				            {"CO2_gaz_Mt", type number},
+				            {"CO2_ciment_Mt", type number},
+				            {"CO2_torchage_Mt", type number},
+				            {"Croissance_CO2_Mt", type number},
+				            {"Croissance_CO2_%", type number},
+				            {"CO2_par_PIB", type number},
+				            {"CO2_consommation_Mt", type number}
+				        }
+				    ),
+				
+				    // Catégoriser les pays selon leur niveau d’émission de CO2
+				    AjouterCategorieCO2 = Table.AddColumn(RenommeColonnesTechniques, "Catégorie_CO2", each 
+				        if [CO2_total_Mt] = null then null 
+				        else if [CO2_total_Mt] < 10 then "Très faible" 
+				        else if [CO2_total_Mt] < 50 then "Faible" 
+				        else if [CO2_total_Mt] < 200 then "Moyen" 
+				        else "Élevé", type text),
+				
+				    // Identifier le secteur le plus émetteur pour chaque pays/année
+				    AjouterSecteurDominant = Table.AddColumn(AjouterCategorieCO2, "Secteur_dominant_CO2", each
+				        let
+				            secteurs = {
+				                {"Charbon", [CO2_charbon_Mt]},
+				                {"Pétrole", [CO2_pétrole_Mt]},
+				                {"Gaz", [CO2_gaz_Mt]},
+				                {"Ciment", [CO2_ciment_Mt]},
+				                {"Torchage", [CO2_torchage_Mt]}
+				            },
+				            secteursFiltres = List.Select(secteurs, each _{1} <> null and _{1} >= 0),
+				            valeurs = List.Transform(secteursFiltres, each _{1}),
+				            maxValeur = if List.Count(valeurs) > 0 then List.Max(valeurs) else null,
+				            secteurNom = if maxValeur <> null then List.First(List.Select(secteursFiltres, each _{1} = maxValeur)){0} else null
+				        in
+				            secteurNom, type text),
+				
+				    // Classer selon l'efficacité CO2 (tonnes de CO2 par unité de PIB)
+				    AjouterEfficaciteCarbone = Table.AddColumn(AjouterSecteurDominant, "Efficacité_CO2", each
+				        if [CO2_par_PIB] = null then null
+				        else if [CO2_par_PIB] < 0.2 then "Très efficace"
+				        else if [CO2_par_PIB] < 0.5 then "Efficace"
+				        else if [CO2_par_PIB] < 1 then "Moyennement efficace"
+				        else "Inefficace", type text),
+				#"Columns removed by Measure Killer"= Table.SelectColumns(AjouterEfficaciteCarbone,{"Année","CO2_par_PIB","CO2_torchage_Mt","CO2_par_habitant","Pays","N2O_Mt","CO2_ciment_Mt","CO2_consommation_Mt","Code ISO","CO2_charbon_Mt","CO2_pétrole_Mt","GES_total_Mt","CO2_total_Mt","PIB_USD","Méthane_Mt","Population","CO2_gaz_Mt"}),
+				#"Columns removed by Measure Killer 2"= Table.SelectColumns(#"Columns removed by Measure Killer",{"Année","CO2_par_PIB","Population","Méthane_Mt","N2O_Mt","CO2_gaz_Mt","CO2_torchage_Mt","CO2_par_habitant","CO2_pétrole_Mt","CO2_consommation_Mt","GES_total_Mt","Code ISO","CO2_charbon_Mt","Pays","CO2_total_Mt","CO2_ciment_Mt"})
+				in
+				#"Columns removed by Measure Killer 2"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

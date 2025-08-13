@@ -1,0 +1,44 @@
+table Dim_Gaz
+	lineageTag: 3781a48d-1494-429a-a7f1-6d67630ba1c3
+
+	column Code_Gaz
+		dataType: string
+		isHidden
+		lineageTag: 77f6c83e-9268-4ec3-9465-3247963b005f
+		summarizeBy: none
+		sourceColumn: Code_Gaz
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Gaz = m
+		mode: import
+		queryGroup: 'Tables de Dim'
+		source =
+				let
+				    Source = #table(
+				        {"Code_Gaz", "Libellé_Gaz", "Unité"},
+				        {
+				            {"CO2_total_Mt", "CO₂ total", "Mt"},
+				            {"CO2_par_habitant", "CO₂ par habitant", "t/hab"},
+				            {"Méthane_Mt", "Méthane (CH₄)", "Mt"},
+				            {"N2O_Mt", "Protoxyde d’azote (N₂O)", "Mt"},
+				            {"GES_total_Mt", "Gaz à effet de serre total (GES)", "Mt"},
+				            {"CO2_par_PIB", "CO₂ par PIB", "t/USD"},
+				            {"CO2_consommation_Mt", "CO₂ consommation", "Mt"}
+				        }
+				    ),
+				    Typé = Table.TransformColumnTypes(Source, {
+				        {"Code_Gaz", type text},
+				        {"Libellé_Gaz", type text},
+				        {"Unité", type text}
+				    }),
+				#"Columns removed by Measure Killer"= Table.SelectColumns(Typé,{"Code_Gaz"})
+				in
+				#"Columns removed by Measure Killer"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

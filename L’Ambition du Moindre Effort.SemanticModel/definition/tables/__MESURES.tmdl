@@ -1,0 +1,1290 @@
+table __MESURES
+	lineageTag: 995ed117-b399-46be-b965-987e4b3b5781
+
+	measure KPI_Total_CO2_Mt_HTML = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR AnneePrec = Annee - 1
+			
+			// Valeurs actuelles et précédentes
+			VAR CO2_Actuel = CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]))
+			VAR CO2_Precedent =
+			    CALCULATE(
+			        SUM(Fact_Emissions[CO2_total_Mt]),
+			        FILTER(ALL(Dim_Temps), Dim_Temps[Année] = AnneePrec)
+			    )
+			
+			//Variation %
+			VAR Delta = DIVIDE(CO2_Actuel - CO2_Precedent, CO2_Precedent)
+			
+			// Style dynamique
+			VAR Signe =
+			    IF(ISBLANK(Delta), BLANK(),
+			        IF(ABS(Delta) < 0.001, "", IF(Delta > 0, "+", "-"))
+			    )
+			
+			VAR Fleche =
+			    IF(ISBLANK(Delta), "",
+			        IF(ABS(Delta) < 0.001, "→", IF(Delta > 0, "↑", "↓"))
+			    )
+			
+			VAR Couleur =
+			    SWITCH(TRUE(),
+			        ISBLANK(Delta), "#999999",         // pas de données
+			        ABS(Delta) < 0.001, "#999999",     // stable
+			        Delta < 0, "#5CB85C",              // baisse = vert
+			        Delta > 0, "#E5690B",              // hausse = orange
+			        "#999999"
+			    )
+			
+			VAR VariationTexte =
+			    IF(ISBLANK(Delta),
+			        "<span style='color:#999999;'>Données insuffisantes</span>",
+			        "<span style='color:" & Couleur & "; font-weight:bold;'>" &
+			        Fleche & " " & Signe & FORMAT(ABS(Delta), "0.0%") & " par rapport à " & AnneePrec & "</span>"
+			    )
+			
+			// Bloc HTML final
+			RETURN
+			IF(
+			    ISBLANK(Annee) || ISBLANK(CO2_Actuel),
+			    "<span style='color:#999999;'>Données indisponibles</span>",
+			    "<div style='font-family:Segoe UI; font-size:15px;'>" &
+			    "🌍 <b>" & FORMAT(CO2_Actuel, "#,##0") & " Mt</b> de CO₂ émis en " & Annee & "<br>" &
+			    VariationTexte &
+			    "</div>"
+			)
+			
+			```
+		displayFolder: Vue d'ensemble
+		lineageTag: 3e7e38f1-13c2-4b62-90a9-ddae115ecab9
+
+	measure KPI_CO2_per_capita_HTML = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR AnneePrec = Annee - 1
+			
+			// Valeurs actuelles et précédentes
+			VAR CO2_Actuel = CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]) * 1000000)
+			VAR Pop_Actuelle = CALCULATE(SUM(Fact_Emissions[Population]))
+			VAR Ratio_Actuel = DIVIDE(CO2_Actuel, Pop_Actuelle)
+			
+			VAR CO2_Precedent =
+			    CALCULATE(
+			        SUM(Fact_Emissions[CO2_total_Mt]) * 1000000,
+			        FILTER(ALL(Dim_Temps), Dim_Temps[Année] = AnneePrec)
+			    )
+			
+			VAR Pop_Precedente =
+			    CALCULATE(
+			        SUM(Fact_Emissions[Population]),
+			        FILTER(ALL(Dim_Temps), Dim_Temps[Année] = AnneePrec)
+			    )
+			
+			VAR Ratio_Precedent = DIVIDE(CO2_Precedent, Pop_Precedente)
+			
+			// Variation %
+			VAR Delta = DIVIDE(Ratio_Actuel - Ratio_Precedent, Ratio_Precedent)
+			
+			// Style dynamique
+			VAR Signe =
+			    IF(ISBLANK(Delta), BLANK(),
+			        IF(ABS(Delta) < 0.001, "", IF(Delta > 0, "+", "-"))
+			    )
+			
+			VAR Fleche =
+			    IF(ISBLANK(Delta), "",
+			        IF(ABS(Delta) < 0.001, "→", IF(Delta > 0, "↑", "↓"))
+			    )
+			
+			VAR Couleur =
+			    SWITCH(TRUE(),
+			        ISBLANK(Delta), "#999999",
+			        ABS(Delta) < 0.001, "#999999",
+			        Delta < 0, "#5CB85C",
+			        Delta > 0, "#E5690B",
+			        "#999999"
+			    )
+			
+			VAR EvolutionTexte =
+			    IF(
+			        ISBLANK(Ratio_Precedent),
+			        "<span style='color:#999999;'>Données insuffisantes</span>",
+			        "<span style='color:" & Couleur & "; font-weight:bold;'>" &
+			        Fleche & " " & Signe & FORMAT(ABS(Delta), "0.0%") & " par rapport à " & AnneePrec & "</span>"
+			    )
+			
+			// Bloc final
+			RETURN
+			IF(
+			    ISBLANK(Annee) || ISBLANK(Ratio_Actuel),
+			    "<span style='color:#999999;'>Données indisponibles</span>",
+			    "<div style='font-family:Segoe UI; font-size:15px;'>" &
+			    "👤 <b>" & FORMAT(Ratio_Actuel, "0.0") & " t/hab</b> de CO₂ en " & Annee & "<br>" &
+			    EvolutionTexte &
+			    "</div>"
+			)
+			
+			```
+		displayFolder: Vue d'ensemble
+		lineageTag: fd5b625a-bc44-4f24-b6aa-9768b4869838
+
+	measure KPI_Total_GES_HTML = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR AnneePrec = Annee - 1
+			
+			// Valeurs actuelles et précédentes
+			VAR GES_Actuel = CALCULATE(SUM(Fact_Emissions[GES_total_Mt]))
+			VAR GES_Precedent =
+			    CALCULATE(
+			        SUM(Fact_Emissions[GES_total_Mt]),
+			        FILTER(ALL(Dim_Temps), Dim_Temps[Année] = AnneePrec)
+			    )
+			
+			// Variation %
+			VAR Delta = DIVIDE(GES_Actuel - GES_Precedent, GES_Precedent)
+			
+			// Style dynamique
+			VAR Signe =
+			    IF(ISBLANK(Delta), BLANK(),
+			        IF(ABS(Delta) < 0.001, "", IF(Delta > 0, "+", "-"))
+			    )
+			
+			VAR Fleche =
+			    IF(ISBLANK(Delta), "",
+			        IF(ABS(Delta) < 0.001, "→", IF(Delta > 0, "↑", "↓"))
+			    )
+			
+			VAR Couleur =
+			    SWITCH(TRUE(),
+			        ISBLANK(Delta), "#999999",
+			        ABS(Delta) < 0.001, "#999999",
+			        Delta < 0, "#5CB85C",
+			        Delta > 0, "#E5690B",
+			        "#999999"
+			    )
+			
+			VAR EvolutionTexte =
+			    IF(ISBLANK(GES_Precedent),
+			        "<span style='color:#999999;'>Données insuffisantes</span>",
+			        "<span style='color:" & Couleur & "; font-weight:bold;'>" &
+			        Fleche & " " & Signe & FORMAT(ABS(Delta), "0.0%") & " par rapport à " & AnneePrec & "</span>"
+			    )
+			
+			// Bloc HTML final
+			RETURN
+			IF(
+			    ISBLANK(Annee) || ISBLANK(GES_Actuel),
+			    "<span style='color:#999999;'>Données indisponibles</span>",
+			    "<div style='font-family:Segoe UI; font-size:15px;'>" &
+			    "☁️ <b>" & FORMAT(GES_Actuel, "#,##0") & " Mt</b> de GES émis en " & Annee & "<br>" &
+			    EvolutionTexte &
+			    "</div>"
+			)
+			
+			```
+		displayFolder: Vue d'ensemble
+		lineageTag: 9fc9d529-523a-498f-9416-8d0a5cc48b85
+
+	measure KPI_Peak_Emission_Year_HTML = ```
+			
+			VAR AnneePic = 
+			    CALCULATE(
+			        MAX(Dim_Temps[Année]),
+			        TOPN(
+			            1,
+			            SUMMARIZE(
+			                Fact_Emissions,
+			                Dim_Temps[Année],
+			                "TotalCO2", SUM(Fact_Emissions[CO2_total_Mt])
+			            ),
+			            [TotalCO2], DESC
+			        )
+			    )
+			
+			VAR TotalPic = 
+			    CALCULATE(
+			        SUM(Fact_Emissions[CO2_total_Mt]),
+			        Dim_Temps[Année] = AnneePic
+			    )
+			
+			RETURN
+			IF(
+			    ISBLANK(AnneePic),
+			    "<span style='color:#999999;'>Aucune donnée disponible</span>",
+			    "<div style='font-family:Segoe UI; font-size:15px; text-align:left;'>" &
+			    "📅 <b style='font-size:15px;'>" & AnneePic & "</b><br>" &
+			    "<span style='color:#E5690B; font-weight:bold;'>🛑 Record historique d’émissions de CO₂</span><br>" &
+			    "<span style='color:#264059;'>Total émis : " & FORMAT(TotalPic, "#,##0") & " millions de tonnes</span>" &
+			    "</div>"
+			)
+			
+			
+			```
+		displayFolder: Vue d'ensemble
+		lineageTag: e04cd143-b46e-4a16-a10c-51cd1e4183c9
+
+	measure KPI_Classement_CO2_Pays_HTML = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR CodePays = SELECTEDVALUE(Dim_Pays[Code ISO])
+			VAR NomPays = SELECTEDVALUE(Dim_Pays[Pays])
+			
+			// Table des pays avec leur total CO₂ cette année-là
+			VAR TableClassement =
+			    FILTER(
+			        ALL(Dim_Pays),
+			        NOT ISBLANK(
+			            CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]), Fact_Emissions[Année] = Annee)
+			        )
+			    )
+			
+			// Classement du pays dans la table
+			VAR Rang =
+			    RANKX(
+			        TableClassement,
+			        CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]), Fact_Emissions[Année] = Annee),
+			        ,
+			        DESC,
+			        DENSE
+			    )
+			
+			// Total pour le pays sélectionné
+			VAR TotalMt =
+			    CALCULATE(
+			        SUM(Fact_Emissions[CO2_total_Mt]),
+			        Fact_Emissions[Année] = Annee,
+			        Fact_Emissions[Code ISO] = CodePays
+			    )
+			
+			VAR TotalTonnes = TotalMt * 1000000
+			
+			// Format dynamique : millions ou unités
+			VAR AffichageCO2 =
+			    IF(
+			        TotalTonnes >= 1000000,
+			        FORMAT(TotalMt, "#,##0.0") & " millions de tonnes",
+			        FORMAT(TotalTonnes, "#,##0") & " tonnes"
+			    )
+			
+			RETURN
+			IF(
+			    ISBLANK(CodePays) || ISBLANK(Annee),
+			    "<span style='color:#999999;'>Données indisponibles</span>",
+			    "<div style='font-family:Segoe UI; font-size:15px;'>" &
+			    "🌍 <b>" & NomPays & "</b> était le <b>" & Rang & "ᵉ</b> pays le plus émetteur de CO₂ en " & Annee & "<br>" &
+			    "<span style='color:#264059;'>Émissions totales : <b>" & AffichageCO2 & "</b></span>" &
+			    "</div>"
+			)
+			
+			```
+		displayFolder: Focus pays
+		lineageTag: e63d74ae-e81a-4a20-93b3-1249037afd72
+
+	measure KPI_CO2_par_Habitant_Pays_HTML = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR Pays = SELECTEDVALUE(Dim_Pays[Pays])
+			VAR CodePays = SELECTEDVALUE(Dim_Pays[Code ISO])
+			VAR AnneePrec = Annee - 1
+			
+			// CO2/hab année courante
+			VAR CO2_Tonnes_Actuel =
+			    CALCULATE(
+			        SUM(Fact_Emissions[CO2_total_Mt]) * 1000000,
+			        Fact_Emissions[Année] = Annee,
+			        Fact_Emissions[Code ISO] = CodePays
+			    )
+			
+			VAR Pop_Actuelle =
+			    CALCULATE(
+			        SUM(Fact_Emissions[Population]),
+			        Fact_Emissions[Année] = Annee,
+			        Fact_Emissions[Code ISO] = CodePays
+			    )
+			
+			VAR RatioActuel = DIVIDE(CO2_Tonnes_Actuel, Pop_Actuelle)
+			
+			// CO2/hab année précédente
+			VAR CO2_Tonnes_Prec =
+			    CALCULATE(
+			        SUM(Fact_Emissions[CO2_total_Mt]) * 1000000,
+			        REMOVEFILTERS(Dim_Temps),
+			        Fact_Emissions[Année] = AnneePrec,
+			        Fact_Emissions[Code ISO] = CodePays
+			    )
+			
+			VAR Pop_Prec =
+			    CALCULATE(
+			        SUM(Fact_Emissions[Population]),
+			        REMOVEFILTERS(Dim_Temps),
+			        Fact_Emissions[Année] = AnneePrec,
+			        Fact_Emissions[Code ISO] = CodePays
+			    )
+			
+			VAR RatioPrec = DIVIDE(CO2_Tonnes_Prec, Pop_Prec)
+			
+			// Variation %
+			VAR Delta = DIVIDE(RatioActuel - RatioPrec, RatioPrec)
+			
+			// Style dynamique
+			VAR Signe =
+			    IF(ISBLANK(Delta), BLANK(),
+			        IF(ABS(Delta) < 0.001, "", IF(Delta > 0, "+", "-"))
+			    )
+			
+			VAR Fleche =
+			    IF(ISBLANK(Delta), "",
+			        IF(ABS(Delta) < 0.001, "→", IF(Delta > 0, "↑", "↓"))
+			    )
+			
+			VAR Couleur =
+			    SWITCH(TRUE(),
+			        ISBLANK(Delta), "#999999",
+			        ABS(Delta) < 0.001, "#999999",
+			        Delta < 0, "#5CB85C",
+			        Delta > 0, "#E5690B",
+			        "#999999"
+			    )
+			
+			VAR Texte_Evolution =
+			    IF(
+			        ISBLANK(RatioPrec),
+			        "<span style='color:#999999;'>Données insuffisantes</span>",
+			        "<span style='color:" & Couleur & "; font-weight:bold;'>" &
+			        Fleche & " " & Signe & FORMAT(ABS(Delta), "0.0%") & " par rapport à " & AnneePrec & "</span>"
+			    )
+			
+			// Texte principal
+			RETURN
+			IF(
+			    ISBLANK(RatioActuel),
+			    "<span style='color:#999999;'>Données indisponibles</span>",
+			    "<div style='font-family:Segoe UI; font-size:15px;'>" &
+			    "👤 <b>" & FORMAT(RatioActuel, "0.0") & " tonne" & IF(RatioActuel >= 2, "s", "") &
+			    "</b> de CO₂ par habitant en " & Annee & "<br>" &
+			    Texte_Evolution &
+			    "</div>"
+			)
+			
+			```
+		displayFolder: Focus pays
+		lineageTag: 45dec693-5ba7-4059-b59a-5c06db6425d9
+
+	measure KPI_Gaz_Dominant_Pays_HTML = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR AnneePrec = Annee - 1
+			VAR CodePays = SELECTEDVALUE(Dim_Pays[Code ISO])
+			VAR Pays = SELECTEDVALUE(Dim_Pays[Pays])
+			
+			// GES actuels
+			VAR CO2 = CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]), Fact_Emissions[Année] = Annee, Fact_Emissions[Code ISO] = CodePays)
+			VAR CH4 = CALCULATE(SUM(Fact_Emissions[Méthane_Mt]), Fact_Emissions[Année] = Annee, Fact_Emissions[Code ISO] = CodePays)
+			VAR N2O = CALCULATE(SUM(Fact_Emissions[N2O_Mt]), Fact_Emissions[Année] = Annee, Fact_Emissions[Code ISO] = CodePays)
+			VAR GES_Total = CO2 + CH4 + N2O
+			
+			VAR TableActuel =
+			    UNION(
+			        ROW("Gaz", "CO₂", "Valeur", CO2),
+			        ROW("Gaz", "Méthane", "Valeur", CH4),
+			        ROW("Gaz", "N₂O", "Valeur", N2O)
+			    )
+			
+			VAR MaxGaz = MAXX(TableActuel, [Valeur])
+			VAR GazActuel = MAXX(FILTER(TableActuel, [Valeur] = MaxGaz), [Gaz])
+			VAR PartActuelle = DIVIDE(MaxGaz, GES_Total)
+			
+			// GES année précédente
+			VAR CO2prec = CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]), REMOVEFILTERS(Dim_Temps), Fact_Emissions[Année] = AnneePrec, Fact_Emissions[Code ISO] = CodePays)
+			VAR CH4prec = CALCULATE(SUM(Fact_Emissions[Méthane_Mt]), REMOVEFILTERS(Dim_Temps), Fact_Emissions[Année] = AnneePrec, Fact_Emissions[Code ISO] = CodePays)
+			VAR N2Oprec = CALCULATE(SUM(Fact_Emissions[N2O_Mt]), REMOVEFILTERS(Dim_Temps), Fact_Emissions[Année] = AnneePrec, Fact_Emissions[Code ISO] = CodePays)
+			VAR GES_Prec = CO2prec + CH4prec + N2Oprec
+			
+			VAR TablePrec =
+			    UNION(
+			        ROW("Gaz", "CO₂", "Valeur", CO2prec),
+			        ROW("Gaz", "Méthane", "Valeur", CH4prec),
+			        ROW("Gaz", "N₂O", "Valeur", N2Oprec)
+			    )
+			
+			VAR MaxPrec = MAXX(TablePrec, [Valeur])
+			VAR GazPrec = MAXX(FILTER(TablePrec, [Valeur] = MaxPrec), [Gaz])
+			VAR PartPrec = DIVIDE(MaxPrec, GES_Prec)
+			
+			// Comparaison
+			VAR MemeGaz = GazActuel = GazPrec
+			VAR Delta = DIVIDE(PartActuelle - PartPrec, PartPrec)
+			
+			// Style dynamique
+			VAR Signe = IF(ISBLANK(Delta), BLANK(), IF(Delta > 0, "+", "-"))
+			VAR Fleche = IF(ISBLANK(Delta), "", IF(ABS(Delta) < 0.001, "→", IF(Delta > 0, "↑", "↓")))
+			VAR Couleur =
+			    SWITCH(TRUE(),
+			        ISBLANK(Delta), "#999999",
+			        NOT MemeGaz, "#9F5D35",
+			        Delta < 0, "#5CB85C",
+			        Delta > 0, "#E5690B",
+			        "#999999"
+			    )
+			
+			// Variation texte
+			VAR TexteVariation =
+			    IF(
+			        ISBLANK(GazPrec),
+			        "<span style='color:#999999;'>Données insuffisantes</span>",
+			        IF(
+			            MemeGaz,
+			            "<br><span style='color:" & Couleur & "; font-weight:bold;'>" &
+			            Fleche & " " & Signe & FORMAT(ABS(Delta), "0.0%") & " de sa part par rapport à " & AnneePrec & "</span>",
+			            "<br><span style='color:" & Couleur & "; font-weight:bold;'>⚠ Gaz dominant différent de " & AnneePrec & "</span>"
+			        )
+			    )
+			
+			// Affichage final
+			RETURN
+			IF(
+			    ISBLANK(GazActuel) || ISBLANK(GES_Total),
+			    "<span style='color:#999999;'>Données indisponibles</span>",
+			    "<div style='font-family:Segoe UI; font-size:14px;'>" &
+			    "🧪 Le gaz dominant émis par <b>" & Pays & "</b> en " & Annee & " est : <b>" & GazActuel & "</b><br>" &
+			    "<span style='color:#264059;'>Il représente <b>" & FORMAT(PartActuelle, "0.0%") & "</b> des émissions de GES</span>" &
+			    TexteVariation &
+			    "</div>"
+			)
+			
+			```
+		displayFolder: Focus pays
+		lineageTag: 88eacfb0-bbe1-47e7-addb-a232bfc6de8e
+
+	measure KPI_Secteur_Dominant_Pays_HTML = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR AnneePrec = Annee - 1
+			VAR CodePays = SELECTEDVALUE(Dim_Pays[Code ISO])
+			VAR Pays = SELECTEDVALUE(Dim_Pays[Pays])
+			
+			// Valeurs actuelles par secteur
+			VAR Charbon = CALCULATE(SUM(Fact_Emissions[CO2_charbon_Mt]), Fact_Emissions[Année] = Annee, Fact_Emissions[Code ISO] = CodePays)
+			VAR Petrole = CALCULATE(SUM(Fact_Emissions[CO2_pétrole_Mt]), Fact_Emissions[Année] = Annee, Fact_Emissions[Code ISO] = CodePays)
+			VAR Gaz = CALCULATE(SUM(Fact_Emissions[CO2_gaz_Mt]), Fact_Emissions[Année] = Annee, Fact_Emissions[Code ISO] = CodePays)
+			VAR Ciment = CALCULATE(SUM(Fact_Emissions[CO2_ciment_Mt]), Fact_Emissions[Année] = Annee, Fact_Emissions[Code ISO] = CodePays)
+			VAR Torche = CALCULATE(SUM(Fact_Emissions[CO2_torchage_Mt]), Fact_Emissions[Année] = Annee, Fact_Emissions[Code ISO] = CodePays)
+			
+			VAR CO2_Total = Charbon + Petrole + Gaz + Ciment + Torche
+			
+			VAR TableActuelle =
+			    UNION(
+			        ROW("Secteur", "Charbon", "Valeur", Charbon),
+			        ROW("Secteur", "Pétrole", "Valeur", Petrole),
+			        ROW("Secteur", "Gaz", "Valeur", Gaz),
+			        ROW("Secteur", "Ciment", "Valeur", Ciment),
+			        ROW("Secteur", "Torchage", "Valeur", Torche)
+			    )
+			
+			VAR MaxValeur = MAXX(TableActuelle, [Valeur])
+			VAR SecteurActuel = MAXX(FILTER(TableActuelle, [Valeur] = MaxValeur), [Secteur])
+			VAR PartActuelle = DIVIDE(MaxValeur, CO2_Total)
+			
+			// Valeurs année précédente
+			VAR CharbonPrec = CALCULATE(SUM(Fact_Emissions[CO2_charbon_Mt]), REMOVEFILTERS(Dim_Temps), Fact_Emissions[Année] = AnneePrec, Fact_Emissions[Code ISO] = CodePays)
+			VAR PetrolePrec = CALCULATE(SUM(Fact_Emissions[CO2_pétrole_Mt]), REMOVEFILTERS(Dim_Temps), Fact_Emissions[Année] = AnneePrec, Fact_Emissions[Code ISO] = CodePays)
+			VAR GazPrec = CALCULATE(SUM(Fact_Emissions[CO2_gaz_Mt]), REMOVEFILTERS(Dim_Temps), Fact_Emissions[Année] = AnneePrec, Fact_Emissions[Code ISO] = CodePays)
+			VAR CimentPrec = CALCULATE(SUM(Fact_Emissions[CO2_ciment_Mt]), REMOVEFILTERS(Dim_Temps), Fact_Emissions[Année] = AnneePrec, Fact_Emissions[Code ISO] = CodePays)
+			VAR TorchePrec = CALCULATE(SUM(Fact_Emissions[CO2_torchage_Mt]), REMOVEFILTERS(Dim_Temps), Fact_Emissions[Année] = AnneePrec, Fact_Emissions[Code ISO] = CodePays)
+			
+			VAR CO2_TotalPrec = CharbonPrec + PetrolePrec + GazPrec + CimentPrec + TorchePrec
+			
+			VAR TablePrec =
+			    UNION(
+			        ROW("Secteur", "Charbon", "Valeur", CharbonPrec),
+			        ROW("Secteur", "Pétrole", "Valeur", PetrolePrec),
+			        ROW("Secteur", "Gaz", "Valeur", GazPrec),
+			        ROW("Secteur", "Ciment", "Valeur", CimentPrec),
+			        ROW("Secteur", "Torchage", "Valeur", TorchePrec)
+			    )
+			
+			VAR MaxPrec = MAXX(TablePrec, [Valeur])
+			VAR SecteurPrec = MAXX(FILTER(TablePrec, [Valeur] = MaxPrec), [Secteur])
+			VAR PartPrec = DIVIDE(MaxPrec, CO2_TotalPrec)
+			
+			// Comparaison
+			VAR Meme = SecteurActuel = SecteurPrec
+			VAR Delta = DIVIDE(PartActuelle - PartPrec, PartPrec)
+			
+			// Style dynamique
+			VAR Signe = IF(ISBLANK(Delta), BLANK(), IF(Delta > 0, "+", "-"))
+			VAR Fleche = IF(ISBLANK(Delta), "", IF(ABS(Delta) < 0.001, "→", IF(Delta > 0, "↑", "↓")))
+			VAR Couleur =
+			    SWITCH(TRUE(),
+			        ISBLANK(Delta), "#999999",
+			        NOT Meme, "#9F5D35",
+			        Delta < 0, "#5CB85C",
+			        Delta > 0, "#E5690B",
+			        "#999999"
+			    )
+			
+			VAR TexteVariation =
+			    IF(
+			        ISBLANK(SecteurPrec),
+			        "<span style='color:#999999;'>Données insuffisantes</span>",
+			        IF(
+			            Meme,
+			            "<br><span style='color:" & Couleur & "; font-weight:bold;'>" &
+			            Fleche & " " & Signe & FORMAT(ABS(Delta), "0.0%") & " de sa part vs " & AnneePrec & "</span>",
+			            "<br><span style='color:" & Couleur & "; font-weight:bold;'>⚠ Secteur dominant différent de " & AnneePrec & "</span>"
+			        )
+			    )
+			
+			// Affichage
+			RETURN
+			IF(
+			    ISBLANK(SecteurActuel) || ISBLANK(CO2_Total),
+			    "<span style='color:#999999;'>Données indisponibles</span>",
+			    "<div style='font-family:Segoe UI; font-size:13px;'>" &
+			    "🏭 <b>" & SecteurActuel & "</b> est le secteur principal d’émission de CO₂ pour <b>" & Pays & "</b> en " & Annee & "<br>" &
+			    "<span style='color:#264059;'>Il représente <b>" & FORMAT(PartActuelle, "0.0%") & "</b> des émissions sectorielles</span>" &
+			    TexteVariation &
+			    "</div>"
+			)
+			
+			```
+		displayFolder: Focus pays
+		lineageTag: bd5845ea-baa7-4691-be7a-72b11655c4a2
+
+	measure Top5_Pollueurs_HTML_Dyn = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			
+			VAR TableCO2 =
+			    ADDCOLUMNS(
+			        SUMMARIZE(
+			            Fact_Emissions,
+			            Fact_Emissions[Code ISO],
+			            "Pays", MAX(Dim_Pays[Pays]),
+			            "ISO", MAX(Dim_Pays[Code ISO])
+			        ),
+			        "TotalCO2",
+			            CALCULATE(
+			                SUM(Fact_Emissions[CO2_total_Mt]) * 1000000,
+			                Fact_Emissions[Année] = Annee,
+			                REMOVEFILTERS(Dim_Pays)
+			            )
+			    )
+			
+			VAR TableTop =
+			    TOPN(5, TableCO2, [TotalCO2], DESC)
+			
+			VAR TableFinal =
+			    ADDCOLUMNS(
+			        TableTop,
+			        "Rang", RANKX(TableCO2, [TotalCO2], , DESC),
+			        "Drapeau", IF(LEN([ISO]) = 2, UNICHAR(127397 + UNICODE(LEFT([ISO], 1))) & UNICHAR(127397 + UNICODE(RIGHT([ISO], 1))), ""),
+			        "TexteCO2", IF([TotalCO2] >= 1000000, FORMAT([TotalCO2] / 1000000, "#,##0.0") & " Mt", FORMAT([TotalCO2], "#,##0") & " t")
+			    )
+			
+			VAR Htmliso =
+			    CONCATENATEX(
+			        TableFinal,
+			        "<tr><td>" & [Rang] & ". " & [Drapeau] & " " & [Pays] & "</td><td align='right' style='color:#E5690B;'>" & [TexteCO2] & "</td></tr>",
+			        UNICHAR(10),
+			        [Rang], ASC
+			    )
+			
+			RETURN
+			"
+			<div style='font-family:Segoe UI; font-size:15px;'>
+			  <div style='color:#E5690B; font-weight:bold; font-size:18px; margin-bottom:8px;'>
+			    🔺 Top 5 des pays les plus émetteurs de CO₂ 
+			    <span style='color:#264059; font-size:18px;'>(" & Annee & ")</span>
+			  </div>
+			  <table style='width:100%; border-collapse:collapse;'>" & Htmliso & "</table>
+			</div>"
+			
+			```
+		displayFolder: Focus pays
+		lineageTag: e9a7a277-807d-4d7e-8395-5fdcdbcbfc3d
+
+	measure Top5_MoinsEmetteurs_HTML_Dyn = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			
+			// Table des émissions par pays (en tonnes)
+			VAR TableCO2 =
+			    ADDCOLUMNS(
+			        SUMMARIZE(
+			            Fact_Emissions,
+			            Fact_Emissions[Code ISO],
+			            "Pays", MAX(Dim_Pays[Pays]),
+			            "ISO", MAX(Dim_Pays[Code ISO])
+			        ),
+			        "TotalCO2",
+			            CALCULATE(
+			                SUM(Fact_Emissions[CO2_total_Mt]) * 1000000,
+			                Fact_Emissions[Année] = Annee,
+			                REMOVEFILTERS(Dim_Pays)
+			            )
+			    )
+			
+			// Garder uniquement les pays avec CO2 > 0
+			VAR TableFiltre =
+			    FILTER(TableCO2, [TotalCO2] > 0)
+			
+			// Récupérer les 5 plus petits émetteurs
+			VAR TableBottom5 =
+			    TOPN(5, TableFiltre, [TotalCO2], ASC)
+			
+			// Ajouter rang et format
+			VAR TableFinal =
+			    ADDCOLUMNS(
+			        TableBottom5,
+			        "Rang", RANKX(TableBottom5, [TotalCO2], , ASC),
+			        "Drapeau", IF(LEN([ISO]) = 2, UNICHAR(127397 + UNICODE(LEFT([ISO], 1))) & UNICHAR(127397 + UNICODE(RIGHT([ISO], 1))), ""),
+			        "TexteCO2", IF([TotalCO2] >= 1000000, FORMAT([TotalCO2] / 1000000, "#,##0.0") & " Mt", FORMAT([TotalCO2], "#,##0") & " t")
+			    )
+			
+			// Génération du HTML trié par rang
+			VAR Htmlco2 =
+			    CONCATENATEX(
+			        TableFinal,
+			        "<tr><td>" & [Rang] & ". " & [Drapeau] & " " & [Pays] & "</td><td align='right' style='color:#5CB85C;'>" & [TexteCO2] & "</td></tr>",
+			        UNICHAR(10),
+			        [Rang], ASC
+			    )
+			
+			// Bloc final
+			RETURN
+			"
+			<div style='font-family:Segoe UI; font-size:15px;'>
+			  <div style='color:#5CB85C; font-weight:bold; font-size:18px; margin-bottom:8px;'>
+			    🟢 Top 5 des pays les moins émetteurs de CO₂ 
+			    <span style='color:#264059; font-size:18px;'>(" & Annee & ")</span>
+			  </div>
+			  <table style='width:100%; border-collapse:collapse;'>" & Htmlco2 & "</table>
+			</div>"
+			
+			```
+		displayFolder: Focus pays
+		lineageTag: f303a8ef-9c5d-470a-84f2-ef70af13ab75
+
+	measure KPI_CO2_total_Mt = ```
+			
+			SUM(Fact_Emissions[CO2_total_Mt])
+			
+			```
+		displayFolder: Focus GAZ
+		lineageTag: 4cbdd5e6-cee2-4c25-830f-86966ff1fc8c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure KPI_CH4_total_Mt = ```
+			
+			SUM(Fact_Emissions[Méthane_Mt])
+			
+			```
+		displayFolder: Focus GAZ
+		lineageTag: c890c9c2-749a-42e1-b462-62b828505fb0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure KPI_N2O_total_Mt = ```
+			
+			SUM(Fact_Emissions[N2O_Mt])
+			
+			```
+		displayFolder: Focus GAZ
+		lineageTag: 292962d0-a671-424a-b388-c6f620b64996
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Bloc_Narratif_Par_Gaz = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			
+			VAR CO2 = CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]), Fact_Emissions[Année] = Annee)
+			VAR CH4 = CALCULATE(SUM(Fact_Emissions[Méthane_Mt]), Fact_Emissions[Année] = Annee)
+			VAR N2O = CALCULATE(SUM(Fact_Emissions[N2O_Mt]), Fact_Emissions[Année] = Annee)
+			VAR GES = CALCULATE(SUM(Fact_Emissions[GES_total_Mt]), Fact_Emissions[Année] = Annee)
+			
+			VAR Pct_CO2 = DIVIDE(CO2, GES)
+			VAR Pct_CH4 = DIVIDE(CH4, GES)
+			VAR Pct_N2O = DIVIDE(N2O, GES)
+			
+			RETURN
+			"
+			<div style='font-family:Segoe UI; font-size:15px; line-height:1.6;'>
+			  <div style='font-size:18px; font-weight:bold; color:#264059; margin-bottom:6px;'>
+			    💬 Que peut-on retenir des émissions de gaz à effet de serre en " & Annee & " ?
+			  </div>
+			
+			  <p style='margin:0 0 8px 0;'>🌍 Le <span style='color:#E5690B; font-weight:bold;'>CO₂</span> reste le principal gaz émis, représentant <b>" & FORMAT(Pct_CO2, "0 %") & "</b> des émissions mondiales.</p>
+			
+			  <p style='margin:0 0 8px 0;'>🟢 Le <span style='color:#5CB85C; font-weight:bold;'>méthane (CH₄)</span>, souvent sous-estimé, représente <b>" & FORMAT(Pct_CH4, "0 %") & "</b> — alors qu’il est 80 fois plus réchauffant que le CO₂ sur 20 ans.</p>
+			
+			  <p style='margin:0 0 8px 0;'>🔵 Le <span style='color:#6EA0B1; font-weight:bold;'>protoxyde d’azote (N₂O)</span> complète le trio avec <b>" & FORMAT(Pct_N2O, "0 %") & "</b>, et a un pouvoir de réchauffement près de 300 fois supérieur au CO₂.</p>
+			
+			  <p style='margin:0;'>⚠️ Tous les gaz ne se valent pas : <span style='color:#E5690B;'>réduire uniquement le CO₂ ne suffit pas</span>.</p>
+			</div>"
+			
+			```
+		displayFolder: Focus GAZ
+		lineageTag: ecb1da8c-9d4a-40b3-aa59-123e726baa8b
+
+	measure Bloc_Boutons_Onglets_Gaz = ```
+			
+			"
+			<div style='font-family:Segoe UI; font-size:14px; display:flex; gap:12px; margin:10px 0;'>
+			
+			  <div style='cursor:pointer; background:#E5690B; padding:8px 16px; border-radius:20px; color:white; font-weight:bold;' onclick=""window.PowerBIBookmarks.activateBookmark('Gaz_CO2')"">
+			    🌍 CO₂
+			  </div>
+			
+			  <div style='cursor:pointer; background:#5CB85C; padding:8px 16px; border-radius:20px; color:white; font-weight:bold;' onclick=""window.PowerBIBookmarks.activateBookmark('Gaz_CH4')"">
+			    🌱 CH₄
+			  </div>
+			
+			  <div style='cursor:pointer; background:#6EA0B1; padding:8px 16px; border-radius:20px; color:white; font-weight:bold;' onclick=""window.PowerBIBookmarks.activateBookmark('Gaz_N2O')"">
+			    💨 N₂O
+			  </div>
+			
+			</div>
+			"
+			
+			```
+		displayFolder: Focus GAZ
+		lineageTag: 6e7f80f7-1bfb-4cfc-b4bd-24825de2ca6a
+
+	measure Titre_Impactant_Accueil = ```
+			
+			"
+			<div style='font-family:Segoe UI; padding:9px;'>
+			  <div style='font-size:40px; font-weight:bold; color:#E5690B;'>
+			    🔥 Plus chaud. Plus vite. Plus dangereux.
+			  </div>
+			  <div style='margin-top:6px; font-size:15px; color:#264059; line-height:1.5;'>
+			    Les émissions mondiales ne ralentissent pas.<br>
+			    Le méthane, le CO₂ et le N₂O s’accumulent… <b>et le temps presse.</b>
+			  </div>
+			</div>"
+			
+			```
+		displayFolder: Vue d'ensemble
+		lineageTag: 4de6d21d-dccd-4cdb-abdd-a6fc1a13f129
+
+	measure Score_Climatique_HTML = ```
+			
+			"
+			<div style='font-family:Segoe UI; font-size:8px; padding:0px;'>
+			  <div style='font-size:15px; font-weight:bold; color:#264059; margin-bottom:5px;'>📊 Score climatique mondial</div>
+			  <ul style='list-style:none; padding-left:0; line-height:1.8;'>
+			    <li>📈 <b>Tendance des émissions :</b> <span style='color:#E5690B;'>en hausse</span></li>
+			    <li>🔥 <b>Gaz dominant :</b> CO₂ (76%)</li>
+			    <li>🧪 <b>Gaz les plus puissants :</b> CH₄ (80x), N₂O (300x)</li>
+			    <li>❌ <b>Objectif 1,5°C :</b> non respecté</li>
+			  </ul>
+			</div>"
+			
+			```
+		displayFolder: Vue d'ensemble
+		lineageTag: 5ce90c10-118c-452c-b4b4-6ab075a31b1c
+
+	measure HTML_Score_Pays_Climatique = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR Pays = SELECTEDVALUE(Dim_Pays[Pays])
+			VAR CodePays = SELECTEDVALUE(Dim_Pays[Code ISO])
+			
+			// Valeurs brutes
+			VAR CO2 = CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]), Fact_Emissions[Code ISO] = CodePays, Fact_Emissions[Année] = Annee)
+			VAR Pop = CALCULATE(SUM(Fact_Emissions[Population]), Fact_Emissions[Code ISO] = CodePays,  Fact_Emissions[Année] = Annee)
+			VAR GES = CALCULATE(SUM(Fact_Emissions[GES_total_Mt]), Fact_Emissions[Code ISO] = CodePays,  Fact_Emissions[Année] = Annee)
+			VAR CO2_par_hab = DIVIDE(CO2 * 1000000, Pop)
+			
+			// Rang mondial CO2
+			VAR Rang =
+			    RANKX(
+			        CALCULATETABLE(
+			            SUMMARIZE(Fact_Emissions, Fact_Emissions[Code ISO]),
+			            ALL(Dim_Pays),
+			            KEEPFILTERS(Fact_Emissions[Année] = SELECTEDVALUE(Dim_Temps[Année]))
+			        ),
+			        CALCULATE(SUM(Fact_Emissions[CO2_total_Mt])),
+			        ,
+			        DESC
+			    )
+			
+			// Gaz dominant
+			VAR CH4 = CALCULATE(SUM(Fact_Emissions[Méthane_Mt]), Fact_Emissions[Code ISO] = CodePays,  Fact_Emissions[Année] = Annee)
+			VAR N2O = CALCULATE(SUM(Fact_Emissions[N2O_Mt]), Fact_Emissions[Code ISO] = CodePays,  Fact_Emissions[Année] = Annee)
+			
+			VAR GazDom =
+			    SWITCH(
+			        TRUE(),
+			        CO2 >= CH4 && CO2 >= N2O, "CO₂",
+			        CH4 >= CO2 && CH4 >= N2O, "CH₄",
+			        "N₂O"
+			    )
+			
+			VAR Couleur =
+			    SWITCH(GazDom,
+			        "CO₂", "#E5690B",
+			        "CH₄", "#5CB85C",
+			        "N₂O", "#6EA0B1",
+			        "#264059"
+			    )
+			
+			RETURN
+			IF(
+			    ISBLANK(Pays),
+			    "<div style='font-family:Segoe UI; font-size:14px; color:#888;'>Sélectionnez un pays pour afficher son profil climatique</div>",
+			"
+			<div style='font-family:Segoe UI; font-size:15px; line-height:1.7;'>
+			  <div style='font-size:15px; font-weight:bold; color:#264059; margin-bottom:8px;'>📍 Profil climatique de " & Pays & " (" & Annee & ")</div>
+			  <ul style='list-style:none; padding-left:0; line-height:1.8;'>
+			    <li>🌫️ <b>Émissions totales :</b> " & FORMAT(GES, "0.0") & " Mt</li>
+			    <li>👤 <b>CO₂ par habitant :</b> " & FORMAT(CO2_par_hab, "0.0") & " t/hab</li>
+			    <li>🏆 <b>Rang mondial :</b> " & Rang & "ᵉ émetteur de CO₂</li>
+			    <li>🧪 <b>Gaz dominant :</b> <span style='color:" & Couleur & "; font-weight:bold;'>" & GazDom & "</span></li>
+			  </ul>
+			</div>"
+			)
+			
+			```
+		displayFolder: Focus pays
+		lineageTag: b0fd59b1-9cca-4cd4-8c09-8ac55593b71a
+
+	measure HTML_Score_Gaz_Monde = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			
+			// Sommes mondiales
+			VAR CO2 = CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]), Fact_Emissions[Année] = Annee)
+			VAR CH4 = CALCULATE(SUM(Fact_Emissions[Méthane_Mt]), Fact_Emissions[Année] = Annee)
+			VAR N2O = CALCULATE(SUM(Fact_Emissions[N2O_Mt]), Fact_Emissions[Année] = Annee)
+			VAR GES_Total = CO2 + CH4 + N2O
+			
+			// Pourcentages
+			VAR Pct_CO2 = DIVIDE(CO2, GES_Total)
+			VAR Pct_CH4 = DIVIDE(CH4, GES_Total)
+			VAR Pct_N2O = DIVIDE(N2O, GES_Total)
+			
+			// Gaz dominant
+			VAR GazDom =
+			    SWITCH(
+			        TRUE(),
+			        CO2 >= CH4 && CO2 >= N2O, "CO₂",
+			        CH4 >= CO2 && CH4 >= N2O, "CH₄",
+			        "N₂O"
+			    )
+			
+			VAR Couleur =
+			    SWITCH(GazDom,
+			        "CO₂", "#E5690B",
+			        "CH₄", "#5CB85C",
+			        "N₂O", "#6EA0B1",
+			        "#264059"
+			    )
+			
+			// Bloc HTML
+			RETURN
+			"
+			<div style='font-family:Segoe UI; font-size:15px; line-height:1;'>
+			  <div style='font-size:15px; font-weight:bold; color:#264059; margin-bottom:2px;'>📊 Répartition mondiale des gaz à effet de serre (" & Annee & ")</div>
+			  <ul style='list-style:none; padding-left:0; line-height:1;'>
+			    <li>🟠 <b>CO₂ :</b> " & FORMAT(Pct_CO2, "0 %") & "</li>
+			    <li>🟢 <b>CH₄ (Méthane) :</b> " & FORMAT(Pct_CH4, "0 %") & "</li>
+			    <li>🔵 <b>N₂O :</b> " & FORMAT(Pct_N2O, "0 %") & "</li>
+			  </ul>
+			  <div style='margin-top:6px;'>Le gaz dominant cette année est : <b style='color:" & Couleur & ";'>" & GazDom & "</b>.</div>
+			</div>"
+			
+			```
+		displayFolder: Focus GAZ
+		lineageTag: f5cfc3c3-e0de-4a92-8c3f-76503d16abc6
+
+	measure Titre_Dynamique_Gaz3 = ```
+			
+			VAR Pays = SELECTEDVALUE(Dim_Pays[Pays])
+			RETURN
+			    IF(
+			        ISBLANK(Pays),
+			        "📊 Évolution mondiale des émissions de CO₂, CH₄ et N₂O",
+			        "📊 Évolution des émissions de CO₂, CH₄ et N₂O en " & Pays
+			    )
+			
+			```
+		displayFolder: Focus GAZ
+		lineageTag: 44e1e73f-b337-4d16-9b9d-e6f197731199
+
+	measure HTML_Score_Secteurs = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			
+			// Valeurs sectorielles globales
+			VAR Charbon = SUM(Fact_Emissions[CO2_charbon_Mt])
+			VAR Petrole = SUM(Fact_Emissions[CO2_pétrole_Mt])
+			VAR Gaz = SUM(Fact_Emissions[CO2_gaz_Mt])
+			VAR Ciment = SUM(Fact_Emissions[CO2_ciment_Mt])
+			VAR Torche = SUM(Fact_Emissions[CO2_torchage_Mt])
+			VAR Total = Charbon + Petrole + Gaz + Ciment + Torche
+			
+			// Table des secteurs (dynamiquement créée)
+			VAR TableSecteurs =
+			    UNION(
+			        ROW("Secteur", "Charbon", "Valeur", Charbon),
+			        ROW("Secteur", "Pétrole", "Valeur", Petrole),
+			        ROW("Secteur", "Gaz", "Valeur", Gaz),
+			        ROW("Secteur", "Ciment", "Valeur", Ciment),
+			        ROW("Secteur", "Torchage", "Valeur", Torche)
+			    )
+			
+			// Secteur dominant
+			VAR SecteurDom =
+			    MAXX(
+			        TOPN(1, TableSecteurs, [Valeur], DESC),
+			        [Secteur]
+			    )
+			
+			// Couleur dynamique
+			VAR Couleur =
+			    SWITCH(SecteurDom,
+			        "Charbon", "#E5690B",
+			        "Pétrole", "#9F5D35",
+			        "Gaz", "#6EA0B1",
+			        "Ciment", "#5CB85C",
+			        "Torchage", "#A569BD",
+			        "#264059"
+			    )
+			
+			// Bloc HTML
+			RETURN
+			"
+			<div style='font-family:Segoe UI; font-size:14px; line-height:1.3;'>
+			  <div style='font-weight:bold; color:#264059; font-size:13px;'>📦 Répartition des émissions par secteur (" & Annee & ")</div>
+			  <ul style='list-style:none; padding-left:0;'>
+			    <li>🧱 <b>Charbon :</b> " & FORMAT(Charbon, "0.0") & " Mt</li>
+			    <li>🛢 <b>Pétrole :</b> " & FORMAT(Petrole, "0.0") & " Mt</li>
+			    <li>🔥 <b>Gaz :</b> " & FORMAT(Gaz, "0.0") & " Mt</li>
+			    <li>🏗 <b>Ciment :</b> " & FORMAT(Ciment, "0.0") & " Mt</li>
+			    <li>🚨 <b>Torchage :</b> " & FORMAT(Torche, "0.0") & " Mt</li>
+			    <li>🎯 Le secteur dominant est le : <b style='color:" & Couleur & ";'>" & SecteurDom & "</b></li>
+			  </ul>
+			  
+			</div>"
+			
+			```
+		displayFolder: Focus Secteur
+		lineageTag: 874aff13-5cfe-4e30-a9f2-09e46d9bcb9a
+
+	measure HTML_KPI_CO2_Charbon_YoY = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR AnneePrec = Annee - 1
+			
+			// Valeurs actuelles et précédentes
+			VAR Valeur = CALCULATE(
+			    SUM(Fact_Emissions[CO2_charbon_Mt]),
+			    Fact_Emissions[Année] = Annee
+			)
+			
+			VAR ValeurPrec = CALCULATE(
+			    SUM(Fact_Emissions[CO2_charbon_Mt]),
+			    REMOVEFILTERS(Dim_Temps),
+			    Fact_Emissions[Année] = AnneePrec
+			)
+			
+			// Variation %
+			VAR Delta = DIVIDE(Valeur - ValeurPrec, ValeurPrec)
+			
+			// Style dynamique
+			VAR Signe =
+			    IF(ISBLANK(Delta), BLANK(),
+			        IF(ABS(Delta) < 0.001, "", IF(Delta > 0, "+", "-"))
+			    )
+			
+			VAR Fleche =
+			    IF(ISBLANK(Delta), "",
+			        IF(ABS(Delta) < 0.001, "→", IF(Delta > 0, "↑", "↓"))
+			    )
+			
+			VAR Couleur =
+			    SWITCH(TRUE(),
+			        ISBLANK(Delta), "#999999",
+			        ABS(Delta) < 0.001, "#999999",
+			        Delta < 0, "#5CB85C",
+			        Delta > 0, "#E5690B",
+			        "#999999"
+			    )
+			
+			VAR TexteVariation =
+			    IF(ISBLANK(Delta),
+			        "<span style='color:#999999;'>Données insuffisantes</span>",
+			        "<span style='color:" & Couleur & "; font-weight:bold;'>" &
+			        Fleche & " " & Signe & FORMAT(ABS(Delta), "0.0%") & " par rapport à " & AnneePrec & "</span>"
+			    )
+			
+			// Affichage final
+			RETURN
+			"<div style='font-family:Segoe UI; font-size:15px;'>
+			  🧱 Émissions liées au charbon en " & Annee & " : <b>" & FORMAT(Valeur, "0.0") & " Mt</b><br>
+			  " & TexteVariation & "
+			</div>"
+			
+			```
+		displayFolder: Focus Secteur
+		lineageTag: f0619616-710a-4691-9511-975f0b3c39b1
+
+	measure HTML_KPI_CO2_Petrole_YoY = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR AnneePrec = Annee - 1
+			
+			// Valeurs actuelles et précédentes
+			VAR Valeur = CALCULATE(
+			    SUM(Fact_Emissions[CO2_pétrole_Mt]),
+			    Fact_Emissions[Année] = Annee
+			)
+			
+			VAR ValeurPrec = CALCULATE(
+			    SUM(Fact_Emissions[CO2_pétrole_Mt]),
+			    REMOVEFILTERS(Dim_Temps),
+			    Fact_Emissions[Année] = AnneePrec
+			)
+			
+			// Variation %
+			VAR Delta = DIVIDE(Valeur - ValeurPrec, ValeurPrec)
+			
+			// Style dynamique
+			VAR Signe =
+			    IF(ISBLANK(Delta), BLANK(),
+			        IF(ABS(Delta) < 0.001, "", IF(Delta > 0, "+", "-"))
+			    )
+			
+			VAR Fleche =
+			    IF(ISBLANK(Delta), "",
+			        IF(ABS(Delta) < 0.001, "→", IF(Delta > 0, "↑", "↓"))
+			    )
+			
+			VAR Couleur =
+			    SWITCH(TRUE(),
+			        ISBLANK(Delta), "#999999",         // pas de données
+			        ABS(Delta) < 0.001, "#999999",     // stable
+			        Delta < 0, "#5CB85C",              // baisse = bon → vert
+			        Delta > 0, "#E5690B",              // hausse = mauvais → orange
+			        "#999999"
+			    )
+			
+			VAR VariationTexte =
+			    IF(ISBLANK(Delta),
+			        "<span style='color:#999999;'>Données insuffisantes</span>",
+			        "<span style='color:" & Couleur & "; font-weight:bold;'>" &
+			        Fleche & " " & Signe & FORMAT(ABS(Delta), "0.0%") & " par rapport à " & AnneePrec & "</span>"
+			    )
+			
+			// Bloc HTML final
+			RETURN
+			"<div style='font-family:Segoe UI; font-size:15px;'>
+			  🛢 Émissions liées au pétrole en " & Annee & " : <b>" & FORMAT(Valeur, "0.0") & " Mt</b><br>
+			  " & VariationTexte & "
+			</div>"
+			
+			```
+		displayFolder: Focus Secteur
+		lineageTag: e34a8ea6-2b52-4560-b25d-c67ff94704e1
+
+	measure HTML_KPI_SecteurDominant_YoY = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR AnneePrec = Annee - 1
+			
+			// Valeurs actuelles
+			VAR SecteursActuel =
+			    UNION(
+			        ROW("Secteur", "Charbon", "Valeur", SUM(Fact_Emissions[CO2_charbon_Mt])),
+			        ROW("Secteur", "Pétrole", "Valeur", SUM(Fact_Emissions[CO2_pétrole_Mt])),
+			        ROW("Secteur", "Gaz", "Valeur", SUM(Fact_Emissions[CO2_gaz_Mt])),
+			        ROW("Secteur", "Ciment", "Valeur", SUM(Fact_Emissions[CO2_ciment_Mt])),
+			        ROW("Secteur", "Torchage", "Valeur", SUM(Fact_Emissions[CO2_torchage_Mt]))
+			    )
+			VAR SecteurActuel = MAXX(TOPN(1, SecteursActuel, [Valeur], DESC), [Secteur])
+			
+			// Valeurs préc
+			VAR SecteursPrec =
+			    UNION(
+			        ROW("Secteur", "Charbon", "Valeur", CALCULATE(SUM(Fact_Emissions[CO2_charbon_Mt]), Fact_Emissions[Année] = AnneePrec)),
+			        ROW("Secteur", "Pétrole", "Valeur", CALCULATE(SUM(Fact_Emissions[CO2_pétrole_Mt]), Fact_Emissions[Année] = AnneePrec)),
+			        ROW("Secteur", "Gaz", "Valeur", CALCULATE(SUM(Fact_Emissions[CO2_gaz_Mt]), Fact_Emissions[Année] = AnneePrec)),
+			        ROW("Secteur", "Ciment", "Valeur", CALCULATE(SUM(Fact_Emissions[CO2_ciment_Mt]), Fact_Emissions[Année] = AnneePrec)),
+			        ROW("Secteur", "Torchage", "Valeur", CALCULATE(SUM(Fact_Emissions[CO2_torchage_Mt]), Fact_Emissions[Année] = AnneePrec))
+			    )
+			VAR SecteurPrec = MAXX(TOPN(1, SecteursPrec, [Valeur], DESC), [Secteur])
+			
+			VAR Variation =
+			    IF(
+			        SecteurActuel = SecteurPrec,
+			        "✅ Secteur dominant inchangé (" & SecteurActuel & ")",
+			        "⚠ Changement de secteur dominant : <b>" & SecteurPrec & "</b> → <b>" & SecteurActuel & "</b>"
+			    )
+			
+			RETURN
+			"<div style='font-family:Segoe UI; font-size:15px;'>
+			  🧭 Secteur dominant en " & Annee & " : <b>" & SecteurActuel & "</b><br>
+			  " & Variation & "
+			</div>"
+			
+			```
+		displayFolder: Focus Secteur
+		lineageTag: 8da216ef-4bd3-4270-8ebe-b57b13fd2fab
+
+	measure HTML_KPI_Top3_Secteurs = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			
+			VAR TableSecteurs =
+			    UNION(
+			        ROW("Secteur", "Charbon", "Valeur", SUM(Fact_Emissions[CO2_charbon_Mt])),
+			        ROW("Secteur", "Pétrole", "Valeur", SUM(Fact_Emissions[CO2_pétrole_Mt])),
+			        ROW("Secteur", "Gaz", "Valeur", SUM(Fact_Emissions[CO2_gaz_Mt])),
+			        ROW("Secteur", "Ciment", "Valeur", SUM(Fact_Emissions[CO2_ciment_Mt])),
+			        ROW("Secteur", "Torchage", "Valeur", SUM(Fact_Emissions[CO2_torchage_Mt]))
+			    )
+			
+			VAR Top3 =
+			    TOPN(3, TableSecteurs, [Valeur], DESC)
+			
+			VAR HtmlList =
+			    CONCATENATEX(
+			        Top3,
+			        "<li><b>" & [Secteur] & "</b> : " & FORMAT([Valeur], "0.0") & " Mt</li>",
+			        UNICHAR(10)
+			    )
+			
+			RETURN
+			"<div style='font-family:Segoe UI; font-size:10px;'>
+			  🥇 Les 3 secteurs les plus émetteurs en " & Annee & " :
+			  <ul style='padding-left:4px;'>" & HtmlList & "</ul>
+			</div>"
+			
+			```
+		displayFolder: Focus Secteur
+		lineageTag: be5b65e5-236f-4643-9d71-33cc05df4f11
+
+	measure Titre_Graph_Charbon = ```
+			
+			VAR Annee = MAX(Dim_Temps[Année])
+			VAR Pays = SELECTEDVALUE(Dim_Pays[Pays])
+			
+			RETURN
+			IF(
+			    ISBLANK(Pays),
+			    "📈 Évolution des émissions des secteurs  jusqu’en " & Annee,
+			    "📈 Évolution des émissions des secteurs  en " & Pays & " jusqu’en " & Annee
+			)
+			
+			```
+		displayFolder: Focus Secteur
+		lineageTag: d977af3c-440a-4fe4-adbd-be42d6755ce5
+
+	measure Tooltip_CO2_par_Habitant_HTML = ```
+			
+			VAR Annee = SELECTEDVALUE(Dim_Temps[Année])
+			VAR CodePays = SELECTEDVALUE(Dim_Pays[Code ISO])
+			VAR NomPays = SELECTEDVALUE(Dim_Pays[Pays])
+			
+			// Pays (actuels)
+			VAR CO2_Pays = CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]) * 1000000)
+			VAR Pop_Pays = CALCULATE(SUM(Fact_Emissions[Population]))
+			VAR RatioPays = DIVIDE(CO2_Pays, Pop_Pays)
+			
+			// Monde (global)
+			VAR CO2_Monde = CALCULATE(SUM(Fact_Emissions[CO2_total_Mt]) * 1000000, REMOVEFILTERS(Dim_Pays))
+			VAR Pop_Monde = CALCULATE(SUM(Fact_Emissions[Population]), REMOVEFILTERS(Dim_Pays))
+			VAR RatioMonde = DIVIDE(CO2_Monde, Pop_Monde)
+			
+			// Part du pays dans les émissions mondiales
+			VAR PartCO2 = DIVIDE(CO2_Pays, CO2_Monde)
+			
+			// Format
+			VAR CO2_Mt = FORMAT(CO2_Pays / 1000000, "0.0")
+			VAR Pop_Millions = FORMAT(Pop_Pays / 1000000, "0.0")
+			VAR PartCO2_Pourcent = FORMAT(PartCO2, "0.0%")
+			
+			// Badge & Slogan
+			VAR RatioRelatif = DIVIDE(RatioPays, RatioMonde)
+			
+			VAR Badge =
+			    SWITCH(TRUE(),
+			        ISBLANK(CodePays), "",
+			        RatioPays < 1, "<span style='color:#5CB85C;'>🟢 Faible émetteur</span>",
+			        RatioPays < 5, "<span style='color:#F0AD4E;'>🟠 <b>Émetteur moyen</span> </b>",
+			        "<span style='color:#D9534F;'>🔴 Émetteur élevé</span>"
+			    )
+			
+			VAR Slogan =
+			    SWITCH(TRUE(),
+			        ISBLANK(CodePays), "",
+			        RatioRelatif >= 10, "💥 Ce pays émet plus de <b>10×</b> la moyenne mondiale.",
+			        RatioRelatif >= 5, "⚠️ Ce pays dépasse <b>5×</b> la moyenne mondiale.",
+			        RatioRelatif <= 0.5, "✅ Ce pays émet <b>2× moins</b> que la moyenne.",
+			        ""
+			    )
+			
+			VAR Conclu =
+			    SWITCH(TRUE(),
+			        ISBLANK(CodePays), "",
+			        RatioPays >= 15, "🌍 Un poids lourd du carbone",
+			        RatioPays <= 1, "🌱 Un exemple de sobriété",
+			        ""
+			    )
+			
+			// Texte quand pays sélectionné
+			VAR TextePays =
+			"<div style='font-family:Segoe UI; font-size:13px; line-height:2;'>
+			  <div style='font-weight:bold; font-size:18px; color:#264059; margin-bottom:4px;'>📍 Profil CO₂ de " & NomPays & " (" & Annee & ")</div>
+			  <ul style='padding-left:0; list-style:none; line-height:2;'>
+			    <li>👤 <b>" & FORMAT(RatioPays, "0.0") & " t</b> de CO₂ par habitant</li>
+			    <li>🌍 Moyenne mondiale : <b>" & FORMAT(RatioMonde, "0.0") & " t/hab</b></li>
+			    <li>" & Badge & "</li>
+			    <li>🧮 Total : <b>" & CO2_Mt & " Mt</b> de CO₂</li>
+			    <li>👥 Population : <b>" & Pop_Millions & " M</b> d’habitants</li>
+			    <li>📊 Part mondiale : <b>" & PartCO2_Pourcent & "</b> des émissions</li>
+			  </ul>
+			  <div style='margin-top:4px; font-style:italic;'>" & Slogan & "<br>" & Conclu & "</div>
+			</div>"
+			
+			// Texte mondial si aucun pays sélectionné
+			VAR TexteMonde =
+			"<div style='font-family:Segoe UI; font-size:13px; line-height:2.5;'>
+			  <div style='font-weight:bold; font-size:14px; color:#264059;'>🌍 Monde (" & Annee & ")</div>
+			  👤 <b>" & FORMAT(RatioMonde, "0.0") & " t</b> de CO₂ par habitant en moyenne<br>
+			  🧮 <b>" & FORMAT(CO2_Monde / 1000000, "0.0") & " Mt</b> émis au total<br>
+			  👥 <b>" & FORMAT(Pop_Monde / 1000000, "0") & " M</b> d’habitants
+			</div>"
+			
+			// Retour
+			RETURN
+			IF(ISBLANK(CodePays), TexteMonde, TextePays)
+			
+			```
+		displayFolder: Inégalités
+		lineageTag: 4b6967c3-5137-4e0c-a2e2-d427e951ba56
+
+	column Column
+		isHidden
+		formatString: 0
+		lineageTag: 6f03e617-5914-4172-938b-9e3ca61b5cee
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition __MESURES = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 70e20b66a18d48f2b400c650d6fd7c90
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

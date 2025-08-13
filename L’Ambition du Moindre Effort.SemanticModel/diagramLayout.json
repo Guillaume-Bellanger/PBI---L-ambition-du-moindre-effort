@@ -1,0 +1,125 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 54.400001525878906
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 11.000000000000014,
+            "y": 341
+          },
+          "nodeIndex": "Dim_Gaz",
+          "nodeLineageTag": "3781a48d-1494-429a-a7f1-6d67630ba1c3",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 749.47895401902065,
+            "y": 272.44952557257648
+          },
+          "nodeIndex": "Dim_Pays",
+          "nodeLineageTag": "876601cf-e0af-445b-b888-578c8458b2bb",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1454.7566554803323,
+            "y": 0
+          },
+          "nodeIndex": "Dim_Secteurs",
+          "nodeLineageTag": "24b76766-cf02-43c1-b8e2-a5f7201275a4",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 904.19949493157276,
+            "y": 549.899051145153
+          },
+          "nodeIndex": "Fact_Emissions",
+          "nodeLineageTag": "e5285035-9abd-4e81-9fd5-5a3fdeed331d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 391.21723468544178,
+            "y": 357.11740242135818
+          },
+          "nodeIndex": "Fact_Emissions_Gaz",
+          "nodeLineageTag": "dcdc2ddf-0c2c-41ab-a066-97dbf22902ad",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 841.47895401902065,
+            "y": 0
+          },
+          "nodeIndex": "Fact_Emissions_Secteurs",
+          "nodeLineageTag": "681d0a22-6cee-4234-a8f4-ad841bd5949a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1727.7566554803323,
+            "y": 324.94952557257648
+          },
+          "nodeIndex": "__MESURES",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1236.1566493768166,
+            "y": 277.94952557257648
+          },
+          "nodeIndex": "Dim_Temps",
+          "nodeLineageTag": "ef0f72df-f906-4013-91e5-13cb3e6a678d",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Toutes les tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Toutes les tables",
+  "defaultDiagram": "Toutes les tables"
+}

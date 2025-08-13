@@ -1,0 +1,30 @@
+table Dim_Temps
+	lineageTag: ef0f72df-f906-4013-91e5-13cb3e6a678d
+
+	column Année
+		dataType: int64
+		formatString: 0
+		lineageTag: bf06e3ba-6110-4db9-a256-653966b87167
+		summarizeBy: none
+		sourceColumn: Année
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Temps = m
+		mode: import
+		queryGroup: 'Tables de Dim'
+		source =
+				let
+				    Source = Fact_Emissions,
+				    #"Autres colonnes supprimées" = Table.SelectColumns(Source,{"Année"}),
+				    #"Doublons supprimés" = Table.Distinct(#"Autres colonnes supprimées"),
+				    #"Personnalisée ajoutée" = Table.AddColumn(#"Doublons supprimés", "Date", each #date([Année], 1, 1)),
+				    #"Type modifié" = Table.TransformColumnTypes(#"Personnalisée ajoutée",{{"Date", type date}}),
+				#"Columns removed by Measure Killer"= Table.SelectColumns(#"Type modifié",{"Année"})
+				in
+				#"Columns removed by Measure Killer"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

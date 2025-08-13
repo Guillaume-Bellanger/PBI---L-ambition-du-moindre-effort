@@ -1,0 +1,512 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":{\"visual\":\"1.8.101\",\"report\":\"2.0.101\",\"page\":\"1.3.101\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "htmlContent443BE3AD55E043BF878BED274D3A6865"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "ChatGPT_Image_18_juin_2025,_22794766448925048.png",
+            "path": "ChatGPT_Image_18_juin_2025,_22794766448925048.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"f5839e195373d0cdec04\",\"target\":\"ce6e0ac455bd1cd02942\",\"type\":3},{\"source\":\"f5839e195373d0cdec04\",\"target\":\"1ba19c2de46c7064dc9b\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ChatGPT Image 18 juin 2025, 22_26_40.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ChatGPT_Image_18_juin_2025,_22794766448925048.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"49D\"}}}}}]},\"visibility\":1}",
+      "displayName": "Focus Pays",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "2031729f82a354a0cca7",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"077847917503ec55d553\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":8,\"z\":6000,\"width\":320,\"height\":152,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.HTML_Score_Pays_Climatique\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"HTML_Score_Pays_Climatique\"},\"Name\":\"__MESURES.HTML_Score_Pays_Climatique\",\"NativeReferenceName\":\"HTML_Score_Pays_Climatique\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.00,
+          "width": 320.00,
+          "x": 8.00,
+          "y": 8.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"1ba19c2de46c7064dc9b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":479.99999999999994,\"y\":479.99999999999994,\"z\":10000,\"width\":768,\"height\":224.00000000000003,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.Top5_MoinsEmetteurs_HTML_Dyn\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Top5_MoinsEmetteurs_HTML_Dyn\"},\"Name\":\"__MESURES.Top5_MoinsEmetteurs_HTML_Dyn\",\"NativeReferenceName\":\"Top5_MoinsEmetteurs_HTML_Dyn\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 224.00,
+          "width": 768.00,
+          "x": 480.00,
+          "y": 480.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"2a25987ac83bca491005\",\"layouts\":[{\"id\":0,\"position\":{\"x\":80,\"y\":352,\"z\":2000,\"width\":360,\"height\":112.00000000000001,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.KPI_CO2_par_Habitant_Pays_HTML\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_CO2_par_Habitant_Pays_HTML\"},\"Name\":\"__MESURES.KPI_CO2_par_Habitant_Pays_HTML\",\"NativeReferenceName\":\"KPI_CO2_par_Habitant_Pays_HTML\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_CO2_per_capita_HTML\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Une personne, des tonnes de gaz'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 112.00,
+          "width": 360.00,
+          "x": 80.00,
+          "y": 352.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"794e3f700b847a35c901\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":239.99999999999997,\"z\":0,\"width\":360,\"height\":112.00000000000001,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.KPI_Classement_CO2_Pays_HTML\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_Classement_CO2_Pays_HTML\"},\"Name\":\"__MESURES.KPI_Classement_CO2_Pays_HTML\",\"NativeReferenceName\":\"KPI_Classement_CO2_Pays_HTML\"}]},\"columnProperties\":{\"__MESURES.KPI_Classement_CO2_Pays_HTML\":{\"formatString\":\"G\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"contentFormatting\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"align\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Le pays est-il dans le top des pollueurs ?'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 112.00,
+          "width": 360.00,
+          "x": 8.00,
+          "y": 240.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"83394a9d4bd77a12341d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":176,\"z\":7000,\"width\":880,\"height\":48,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"pages\":[{\"properties\":{\"showPage\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"e533e9ea173cab9136bb\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 880.00,
+          "x": 368.00,
+          "y": 176.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"8be583c4b44de3370a0d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":80,\"y\":584,\"z\":9000,\"width\":360,\"height\":136,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.KPI_Gaz_Dominant_Pays_HTML\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_Gaz_Dominant_Pays_HTML\"},\"Name\":\"__MESURES.KPI_Gaz_Dominant_Pays_HTML\",\"NativeReferenceName\":\"KPI_Gaz_Dominant_Pays_HTML\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Gaz dominant : l’ennemi invisible'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 136.00,
+          "width": 360.00,
+          "x": 80.00,
+          "y": 584.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"a8493390450a3d9d1946\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":464,\"z\":3000,\"width\":360,\"height\":120,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.KPI_Secteur_Dominant_Pays_HTML\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_Secteur_Dominant_Pays_HTML\"},\"Name\":\"__MESURES.KPI_Secteur_Dominant_Pays_HTML\",\"NativeReferenceName\":\"KPI_Secteur_Dominant_Pays_HTML\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Charbon ? Pétrole ? Gaz ? Qui domine ?'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 120.00,
+          "width": 360.00,
+          "x": 8.00,
+          "y": 464.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"a994f49baa85d2371e81\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":160,\"z\":1000,\"width\":128,\"height\":80,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Temps.Année\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"},\"Name\":\"Dim_Temps.Année\",\"NativeReferenceName\":\"Année\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2019L\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 128.00,
+          "x": 32.00,
+          "y": 160.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"aea6ab3d330691c5556c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":376,\"y\":8,\"z\":4000,\"width\":872.0000000000001,\"height\":152,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.Titre_Impactant_Accueil\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Titre_Impactant_Accueil\"},\"Name\":\"__MESURES.Titre_Impactant_Accueil\",\"NativeReferenceName\":\"Titre_Impactant_Accueil\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"38D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.00,
+          "width": 872.00,
+          "x": 376.00,
+          "y": 8.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"ce6e0ac455bd1cd02942\",\"layouts\":[{\"id\":0,\"position\":{\"x\":479.99999999999994,\"y\":239.99999999999997,\"z\":5000,\"width\":768,\"height\":224.00000000000003,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.Top5_Pollueurs_HTML_Dyn\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Top5_Pollueurs_HTML_Dyn\"},\"Name\":\"__MESURES.Top5_Pollueurs_HTML_Dyn\",\"NativeReferenceName\":\"Top5_Pollueurs_HTML_Dyn\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Le podium des pollueurs mondiaux'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Dim_Pays\"}},\"Property\":\"Pays\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Emissions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_total_Mt\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 224.00,
+          "width": 768.00,
+          "x": 480.00,
+          "y": 240.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"f5839e195373d0cdec04\",\"layouts\":[{\"id\":0,\"position\":{\"x\":160,\"y\":160,\"z\":8000,\"width\":192,\"height\":80,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Pays.Pays\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"},\"Name\":\"Dim_Pays.Pays\",\"NativeReferenceName\":\"Pays\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'China'\"}}]]}}}]}},\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 192.00,
+          "x": 160.00,
+          "y": 160.00,
+          "z": 8000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"9faf4950cd666588cb5e\",\"target\":\"c6e2aaf2da1778c687ee\",\"type\":1}],\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ChatGPT Image 18 juin 2025, 22_26_40.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ChatGPT_Image_18_juin_2025,_22794766448925048.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"49D\"}}}}}]},\"visibility\":1}",
+      "displayName": "Classements & inégalités",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "271b60c5197e540249b4",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1a514ae41965b03c1308\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":160,\"z\":0,\"width\":128,\"height\":80,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Temps.Année\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"},\"Name\":\"Dim_Temps.Année\",\"NativeReferenceName\":\"Année\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2020L\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 128.00,
+          "x": 32.00,
+          "y": 160.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9faf4950cd666588cb5e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":160,\"y\":160,\"z\":4000,\"width\":192,\"height\":80,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Pays.Pays\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"},\"Name\":\"Dim_Pays.Pays\",\"NativeReferenceName\":\"Pays\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selfFilter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Contains\":{\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"}},\"Right\":{\"Literal\":{\"Value\":\"'chin'\"}}}},\"Annotations\":{\"PowerBI.MParameterBehavior\":1}}]}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'China'\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 192.00,
+          "x": 160.00,
+          "y": 160.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"a8f1049a39534478414e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":304,\"z\":6000,\"width\":296,\"height\":320,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.Tooltip_CO2_par_Habitant_HTML\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Tooltip_CO2_par_Habitant_HTML\"},\"Name\":\"__MESURES.Tooltip_CO2_par_Habitant_HTML\",\"NativeReferenceName\":\"Tooltip_CO2_par_Habitant_HTML\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 320.00,
+          "width": 296.00,
+          "x": 32.00,
+          "y": 304.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"c5306273365ca082c6b6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":376,\"y\":8,\"z\":1000,\"width\":872.0000000000001,\"height\":160,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.Titre_Impactant_Accueil\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Titre_Impactant_Accueil\"},\"Name\":\"__MESURES.Titre_Impactant_Accueil\",\"NativeReferenceName\":\"Titre_Impactant_Accueil\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"38D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 160.00,
+          "width": 872.00,
+          "x": 376.00,
+          "y": 8.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c6e2aaf2da1778c687ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":240,\"z\":5000,\"width\":904,\"height\":480,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"pythonVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Pays.Code ISO\"},{\"queryRef\":\"Dim_Pays.Pays\"},{\"queryRef\":\"Dim_Temps.Année\"},{\"queryRef\":\"Sum(Fact_Emissions.CO2_total_Mt)\"},{\"queryRef\":\"Sum(Fact_Emissions.Population)\"},{\"queryRef\":\"Sum(Fact_Emissions.CO2_total_Mt)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"Dim_Temps\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Emissions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Code ISO\"},\"Name\":\"Dim_Pays.Code ISO\",\"NativeReferenceName\":\"Code ISO\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"},\"Name\":\"Dim_Pays.Pays\",\"NativeReferenceName\":\"Pays\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Année\"},\"Name\":\"Dim_Temps.Année\",\"NativeReferenceName\":\"Année\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_total_Mt\"}},\"Function\":0},\"Name\":\"Sum(Fact_Emissions.CO2_total_Mt)\",\"NativeReferenceName\":\"Total_CO2_Année_Monde\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Population\"}},\"Function\":0},\"Name\":\"Sum(Fact_Emissions.Population)\",\"NativeReferenceName\":\"Somme de Population\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Code ISO\"}}}]},\"columnProperties\":{\"Sum(Fact_Emissions.CO2_total_Mt)\":{\"displayName\":\"Total_CO2_Année_Monde\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"script\":[{\"properties\":{\"source\":{\"expr\":{\"Literal\":{\"Value\":\"'import pandas as pd\\nimport geopandas as gpd\\nimport matplotlib.pyplot as plt\\nfrom matplotlib.colors import ListedColormap\\n\\n# 1. Charger les frontières du monde\\nworld = gpd.read_file(gpd.datasets.get_path(''naturalearth_lowres''))\\n\\n# 2. Nettoyage des données Power BI\\ndataset.columns = [col.strip() for col in dataset.columns]\\ndataset = dataset.dropna(subset=[''Code ISO'', ''Population'', ''CO2_total_Mt''])\\n\\n# 3. Calcul CO₂ par habitant\\ndataset[\\\"co2_per_capita\\\"] = dataset[\\\"CO2_total_Mt\\\"] * 1_000_000 / dataset[\\\"Population\\\"]\\n\\n# 4. Fusion avec données géographiques\\nworld = world.merge(dataset, how=\\\"left\\\", left_on=\\\"iso_a3\\\", right_on=\\\"Code ISO\\\")\\n\\n# 5. Supprimer les géométries vides pour éviter artefacts\\nworld = world[world.geometry.notnull()]\\n\\n# 6. Classes de CO₂/hab\\nbins = [0, 1, 5, 10, 20, 40]\\nlabels = [''<1'', ''1–5'', ''5–10'', ''10–20'', ''>20'']\\nworld[\\\"classe\\\"] = pd.cut(world[\\\"co2_per_capita\\\"], bins=bins, labels=labels)\\n\\n# 7. Palette de couleurs\\ncolors = [''#5CB85C'', ''#F0AD4E'', ''#E5690B'', ''#D9534F'', ''#9F1028'']\\ncmap = ListedColormap(colors)\\n\\n# 8. Créer la figure\\nfig, ax = plt.subplots(figsize=(22, 12))\\nworld.boundary.plot(ax=ax, linewidth=0.3, color=''lightgray'')\\nworld.plot(column=\\\"classe\\\", cmap=cmap, legend=True, linewidth=0.3, edgecolor=''white'', ax=ax,\\n           alpha=0.45,\\n           legend_kwds={\\n               ''title'': ''CO₂/hab (t/hab)'',\\n               ''loc'': ''lower left'',\\n               ''fontsize'': 16,\\n               ''title_fontsize'': 18\\n           })\\n\\n# 9. Titre dynamique\\nannee = dataset[\\\"Année\\\"].max()\\nax.set_title(\\n    f\\\"Inégalités mondiales des émissions de CO₂ par habitant — {annee}\\\",\\n    fontsize=28, color=\\\"#264059\\\", pad=25\\n)\\n\\n# 10. Si un seul pays sélectionné → zoom + chiffres\\nselected = dataset[\\\"Code ISO\\\"].nunique()\\nif selected == 1:\\n    selected_iso = dataset[\\\"Code ISO\\\"].values[0]\\n    geo = world[world[\\\"iso_a3\\\"] == selected_iso]\\n    if not geo.empty:\\n        # Géométrie principale\\n        main_shape = geo.geometry.iloc[0]\\n        if main_shape.geom_type == ''MultiPolygon'':\\n            largest = max(main_shape.geoms, key=lambda a: a.area)\\n            bounds = largest.bounds\\n            centroid = largest.centroid\\n        else:\\n            bounds = main_shape.bounds\\n            centroid = main_shape.centroid\\n\\n        # Zoom\\n        ax.set_xlim(bounds[0] - 2, bounds[2] + 2)\\n        ax.set_ylim(bounds[1] - 2, bounds[3] + 2)\\n\\n        # Données à afficher\\n        ratio = dataset[\\\"co2_per_capita\\\"].values[0]\\n        co2_total = dataset[\\\"CO2_total_Mt\\\"].values[0]\\n        pop = dataset[\\\"Population\\\"].values[0]\\n\\n        # ✅ Calcul mondial non filtré (corrigé)\\n        annee_actuelle = dataset[\\\"Année\\\"].max()\\n        co2_world = dataset.groupby(\\\"Année\\\")[\\\"CO2_total_Mt\\\"].sum().loc[annee_actuelle]\\n        part = co2_total / co2_world\\n\\n        # Bloc texte\\n        texte = f\\\"{selected_iso}\\\\n\\\"\\n        texte += f\\\" {ratio:.1f} t/hab\\\\n\\\"\\n        texte += f\\\" {co2_total:.1f} Mt CO₂\\\\n\\\"\\n       \\n\\n        ax.text(centroid.x, centroid.y, texte,\\n                ha=''center'', va=''center'', fontsize=14, weight=''bold'', color=''#264059'')\\n\\n# 11. Nettoyage final\\nax.axis(\\\"off\\\")\\nfig.patch.set_facecolor(\\\"#F8F9FA\\\")\\nplt.tight_layout()\\nplt.show()\\n'\"}}},\"provider\":{\"expr\":{\"Literal\":{\"Value\":\"'Python'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 480.00,
+          "width": 904.00,
+          "x": 368.00,
+          "y": 240.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"db9ccc6f01000d4bc351\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":176,\"z\":3000,\"width\":880,\"height\":48,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"pages\":[{\"properties\":{\"showPage\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"e533e9ea173cab9136bb\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 880.00,
+          "x": 368.00,
+          "y": 176.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f2d94a415e1755ca1eb6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":8,\"z\":2000,\"width\":320,\"height\":152,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.HTML_Score_Secteurs\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"HTML_Score_Secteurs\"},\"Name\":\"__MESURES.HTML_Score_Secteurs\",\"NativeReferenceName\":\"HTML_Score_Secteurs\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.00,
+          "width": 320.00,
+          "x": 8.00,
+          "y": 8.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"4a998bd3b8c0057211bb\",\"target\":\"6f4d77e19d067ddd216e\",\"type\":3},{\"source\":\"3386edeb02dc43c1c350\",\"target\":\"702546808ce112501bae\",\"type\":3},{\"source\":\"3386edeb02dc43c1c350\",\"target\":\"3daf1b9c224260cdc77c\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ChatGPT Image 18 juin 2025, 22_26_40.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ChatGPT_Image_18_juin_2025,_22794766448925048.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"49D\"}}}}}]},\"visibility\":1}",
+      "displayName": "Focus Gaz",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "97f8fb0c0663691c4ed3",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2a9fc5b91b2ace91a340\",\"layouts\":[{\"id\":0,\"position\":{\"x\":376,\"y\":8,\"z\":1000,\"width\":872.0000000000001,\"height\":152,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.Titre_Impactant_Accueil\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Titre_Impactant_Accueil\"},\"Name\":\"__MESURES.Titre_Impactant_Accueil\",\"NativeReferenceName\":\"Titre_Impactant_Accueil\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"38D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.00,
+          "width": 872.00,
+          "x": 376.00,
+          "y": 8.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"3386edeb02dc43c1c350\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":160,\"z\":0,\"width\":128,\"height\":80,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Temps.Année\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"},\"Name\":\"Dim_Temps.Année\",\"NativeReferenceName\":\"Année\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2019L\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 128.00,
+          "x": 32.00,
+          "y": 160.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"3daf1b9c224260cdc77c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":479.99999999999994,\"y\":239.99999999999997,\"z\":6000,\"width\":768,\"height\":224.00000000000003,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Temps.Année\",\"active\":true}],\"Y\":[{\"queryRef\":\"__MESURES.KPI_CO2_total_Mt\"},{\"queryRef\":\"__MESURES.KPI_CH4_total_Mt\"},{\"queryRef\":\"__MESURES.KPI_N2O_total_Mt\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"},\"Name\":\"Dim_Temps.Année\",\"NativeReferenceName\":\"Année\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_N2O_total_Mt\"},\"Name\":\"__MESURES.KPI_N2O_total_Mt\",\"NativeReferenceName\":\"N₂O\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_CO2_total_Mt\"},\"Name\":\"__MESURES.KPI_CO2_total_Mt\",\"NativeReferenceName\":\"CO₂\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_CH4_total_Mt\"},\"Name\":\"__MESURES.KPI_CH4_total_Mt\",\"NativeReferenceName\":\"CH₄\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_CO2_total_Mt\"}}}]},\"columnProperties\":{\"__MESURES.KPI_N2O_total_Mt\":{\"displayName\":\"N₂O\"},\"__MESURES.KPI_CO2_total_Mt\":{\"displayName\":\"CO₂\"},\"__MESURES.KPI_CH4_total_Mt\":{\"displayName\":\"CH₄\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#6EA0B1'\"}}}}}},\"selector\":{\"metadata\":\"__MESURES.KPI_N2O_total_Mt\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"__MESURES.KPI_CO2_total_Mt\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#5CB85C'\"}}}}}},\"selector\":{\"metadata\":\"__MESURES.KPI_CH4_total_Mt\"}}],\"categoryAxis\":[{\"properties\":{\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"valueAxis\":[{\"properties\":{\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Répartition des gaz dans les émissions totales'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 224.00,
+          "width": 768.00,
+          "x": 480.00,
+          "y": 240.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"4a998bd3b8c0057211bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":160,\"y\":160,\"z\":4000,\"width\":192,\"height\":80,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Pays.Pays\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"},\"Name\":\"Dim_Pays.Pays\",\"NativeReferenceName\":\"Pays\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'France'\"}}]]}}}]}},\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selfFilter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Contains\":{\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"}},\"Right\":{\"Literal\":{\"Value\":\"'fr'\"}}}},\"Annotations\":{\"PowerBI.MParameterBehavior\":1}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 192.00,
+          "x": 160.00,
+          "y": 160.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6f4d77e19d067ddd216e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":248.00000000000003,\"z\":5000,\"width\":432,\"height\":456,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.Bloc_Narratif_Par_Gaz\"}],\"sampling\":[{\"queryRef\":\"__MESURES.Bloc_Boutons_Onglets_Gaz\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Bloc_Narratif_Par_Gaz\"},\"Name\":\"__MESURES.Bloc_Narratif_Par_Gaz\",\"NativeReferenceName\":\"Bloc_Narratif_Par_Gaz\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Bloc_Boutons_Onglets_Gaz\"},\"Name\":\"__MESURES.Bloc_Boutons_Onglets_Gaz\",\"NativeReferenceName\":\"Bloc_Boutons_Onglets_Gaz\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 456.00,
+          "width": 432.00,
+          "x": 8.00,
+          "y": 248.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"702546808ce112501bae\",\"layouts\":[{\"id\":0,\"position\":{\"x\":479.99999999999994,\"y\":479.99999999999994,\"z\":7000,\"width\":768,\"height\":224.00000000000003,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Temps.Année\",\"active\":true}],\"Y\":[{\"queryRef\":\"__MESURES.KPI_CO2_total_Mt\"},{\"queryRef\":\"__MESURES.KPI_N2O_total_Mt\"},{\"queryRef\":\"__MESURES.KPI_CH4_total_Mt\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0},{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"},\"Name\":\"Dim_Temps.Année\",\"NativeReferenceName\":\"Année\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_N2O_total_Mt\"},\"Name\":\"__MESURES.KPI_N2O_total_Mt\",\"NativeReferenceName\":\"N₂O\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_CO2_total_Mt\"},\"Name\":\"__MESURES.KPI_CO2_total_Mt\",\"NativeReferenceName\":\"CO₂\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_CH4_total_Mt\"},\"Name\":\"__MESURES.KPI_CH4_total_Mt\",\"NativeReferenceName\":\"CH₄\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_CO2_total_Mt\"}}}]},\"columnProperties\":{\"__MESURES.KPI_N2O_total_Mt\":{\"displayName\":\"N₂O\"},\"__MESURES.KPI_CO2_total_Mt\":{\"displayName\":\"CO₂\"},\"__MESURES.KPI_CH4_total_Mt\":{\"displayName\":\"CH₄\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#6EA0B1'\"}}}}}},\"selector\":{\"metadata\":\"__MESURES.KPI_N2O_total_Mt\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"__MESURES.KPI_CO2_total_Mt\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#5CB85C'\"}}}}}},\"selector\":{\"metadata\":\"__MESURES.KPI_CH4_total_Mt\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"__MESURES\"}},\"Property\":\"Titre_Dynamique_Gaz3\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 224.00,
+          "width": 768.00,
+          "x": 480.00,
+          "y": 480.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"71203875c0c91c254505\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":176,\"z\":3000,\"width\":880,\"height\":48,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"pages\":[{\"properties\":{\"showPage\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"e533e9ea173cab9136bb\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 880.00,
+          "x": 368.00,
+          "y": 176.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"d5ed0e791b8d730d7082\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":8,\"z\":2000,\"width\":320,\"height\":152,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.HTML_Score_Gaz_Monde\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"HTML_Score_Gaz_Monde\"},\"Name\":\"__MESURES.HTML_Score_Gaz_Monde\",\"NativeReferenceName\":\"HTML_Score_Gaz_Monde\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.00,
+          "width": 320.00,
+          "x": 8.00,
+          "y": 8.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"a5e2b7e033704045d0e3\",\"target\":\"cabdc0f53c7fd947c97b\",\"type\":3},{\"source\":\"a5e2b7e033704045d0e3\",\"target\":\"b51ffaa579dc33216550\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ChatGPT Image 18 juin 2025, 22_26_40.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ChatGPT_Image_18_juin_2025,_22794766448925048.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"49D\"}}}}}]}}",
+      "displayName": "Vue d'ensemble",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "d59920d3400b4f8513d3",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1423ad8e8edb22dafd42\",\"layouts\":[{\"id\":0,\"position\":{\"x\":80,\"y\":352,\"z\":2000,\"width\":360,\"height\":112.00000000000001,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.KPI_CO2_per_capita_HTML\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_CO2_per_capita_HTML\"},\"Name\":\"__MESURES.KPI_CO2_per_capita_HTML\",\"NativeReferenceName\":\"KPI_CO2_per_capita_HTML\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_CO2_per_capita_HTML\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Combien de CO₂ chaque personne émet-elle en moyenne ?'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 112.00,
+          "width": 360.00,
+          "x": 80.00,
+          "y": 352.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"5424c5fea3ad3dabbd13\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":8,\"z\":8000,\"width\":320,\"height\":152,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.Score_Climatique_HTML\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Score_Climatique_HTML\"},\"Name\":\"__MESURES.Score_Climatique_HTML\",\"NativeReferenceName\":\"Score_Climatique_HTML\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.00,
+          "width": 320.00,
+          "x": 8.00,
+          "y": 8.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"959f1dd19de60df2a479\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":464,\"z\":3000,\"width\":360,\"height\":120,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.KPI_Total_GES_HTML\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_Total_GES_HTML\"},\"Name\":\"__MESURES.KPI_Total_GES_HTML\",\"NativeReferenceName\":\"KPI_Total_GES_HTML\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_Total_GES_HTML\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Toutes émissions confondues, quel est le total des gaz à effet de serre ?'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 120.00,
+          "width": 360.00,
+          "x": 8.00,
+          "y": 464.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"9dd65d1a4208625bea2e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":479.99999999999994,\"y\":239.99999999999997,\"z\":7000,\"width\":768,\"height\":224.00000000000003,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Pays.Pays\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_Emissions.CO2_total_Mt)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Emissions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"},\"Name\":\"Dim_Pays.Pays\",\"NativeReferenceName\":\"Pays\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_total_Mt\"}},\"Function\":0},\"Name\":\"Sum(Fact_Emissions.CO2_total_Mt)\",\"NativeReferenceName\":\"CO2\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_total_Mt\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Fact_Emissions.CO2_total_Mt)\":{\"displayName\":\"CO2\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Le podium des pollueurs mondiaux'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Dim_Pays\"}},\"Property\":\"Pays\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Emissions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_total_Mt\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 224.00,
+          "width": 768.00,
+          "x": 480.00,
+          "y": 240.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"a5e2b7e033704045d0e3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":160,\"z\":1000,\"width\":144,\"height\":80,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Temps.Année\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"},\"Name\":\"Dim_Temps.Année\",\"NativeReferenceName\":\"Année\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2020L\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 144.00,
+          "x": 32.00,
+          "y": 160.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b51ffaa579dc33216550\",\"layouts\":[{\"id\":0,\"position\":{\"x\":479.99999999999994,\"y\":479.99999999999994,\"z\":6000,\"width\":768,\"height\":224.00000000000003,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Temps.Année\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_Emissions.GES_total_Mt)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Emissions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"},\"Name\":\"Dim_Temps.Année\",\"NativeReferenceName\":\"Année\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"GES_total_Mt\"}},\"Function\":0},\"Name\":\"Sum(Fact_Emissions.GES_total_Mt)\",\"NativeReferenceName\":\"GES\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"GES_total_Mt\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Fact_Emissions.GES_total_Mt)\":{\"displayName\":\"GES\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'bevel'\"}}},\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'linear'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"metadata\":\"Sum(Fact_Emissions.GES_total_Mt)\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Une trajectoire toujours ascendante'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"44D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 224.00,
+          "width": 768.00,
+          "x": 480.00,
+          "y": 480.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"cabdc0f53c7fd947c97b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":80,\"y\":584,\"z\":4000,\"width\":360,\"height\":136,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.KPI_Peak_Emission_Year_HTML\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_Peak_Emission_Year_HTML\"},\"Name\":\"__MESURES.KPI_Peak_Emission_Year_HTML\",\"NativeReferenceName\":\"KPI_Peak_Emission_Year_HTML\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_Peak_Emission_Year_HTML\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quelle est l’année record des émissions de CO₂ '\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 136.00,
+          "width": 360.00,
+          "x": 80.00,
+          "y": 584.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"ce74b0e2c7f3ddd70d37\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":239.99999999999997,\"z\":0,\"width\":360,\"height\":112.00000000000001,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.KPI_Total_CO2_Mt_HTML\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_Total_CO2_Mt_HTML\"},\"Name\":\"__MESURES.KPI_Total_CO2_Mt_HTML\",\"NativeReferenceName\":\"KPI_Total_CO2_Mt_HTML\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"KPI_Total_CO2_Mt_HTML\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Combien de CO₂ le monde a-t-il émis cette année ?'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 112.00,
+          "width": 360.00,
+          "x": 8.00,
+          "y": 240.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"dcd101ed3175b27b66c3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":176,\"z\":9000,\"width\":880,\"height\":48,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 880.00,
+          "x": 368.00,
+          "y": 176.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"ddfe5a1be5e26178c784\",\"layouts\":[{\"id\":0,\"position\":{\"x\":376,\"y\":8,\"z\":5000,\"width\":872.0000000000001,\"height\":152,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.Titre_Impactant_Accueil\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Titre_Impactant_Accueil\"},\"Name\":\"__MESURES.Titre_Impactant_Accueil\",\"NativeReferenceName\":\"Titre_Impactant_Accueil\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"38D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.00,
+          "width": 872.00,
+          "x": 376.00,
+          "y": 8.00,
+          "z": 5000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"80a239bb2c0483982a05\",\"target\":\"709a35e12db25ddad760\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ChatGPT Image 18 juin 2025, 22_26_40.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ChatGPT_Image_18_juin_2025,_22794766448925048.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"49D\"}}}}}]},\"visibility\":1}",
+      "displayName": "Focus Secteur",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "fda2f0670d13d688424d",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0b0acf255624ab4bb613\",\"layouts\":[{\"id\":0,\"position\":{\"x\":160,\"y\":160,\"z\":4000,\"width\":192,\"height\":80,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Pays.Pays\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"},\"Name\":\"Dim_Pays.Pays\",\"NativeReferenceName\":\"Pays\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Pays\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pays\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'France'\"}}]]}}}]}},\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 192.00,
+          "x": 160.00,
+          "y": 160.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"3bd66bc0114a900ea18a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":80,\"y\":584,\"z\":7000,\"width\":360,\"height\":136,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.HTML_KPI_Top3_Secteurs\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"HTML_KPI_Top3_Secteurs\"},\"Name\":\"__MESURES.HTML_KPI_Top3_Secteurs\",\"NativeReferenceName\":\"HTML_KPI_Top3_Secteurs\"}]},\"columnProperties\":{\"__MESURES.KPI_Classement_CO2_Pays_HTML\":{\"formatString\":null}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"contentFormatting\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"align\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"' Les 3 secteurs qui pèsent lourd dans la balance carbone'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 136.00,
+          "width": 360.00,
+          "x": 80.00,
+          "y": 584.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"48d0904a9ae620ac00e3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":376,\"y\":8,\"z\":1000,\"width\":872.0000000000001,\"height\":152,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.Titre_Impactant_Accueil\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"Titre_Impactant_Accueil\"},\"Name\":\"__MESURES.Titre_Impactant_Accueil\",\"NativeReferenceName\":\"Titre_Impactant_Accueil\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"38D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.00,
+          "width": 872.00,
+          "x": 376.00,
+          "y": 8.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"516d7ae21e9a33599047\",\"layouts\":[{\"id\":0,\"position\":{\"x\":80,\"y\":352,\"z\":8000,\"width\":360,\"height\":112.00000000000001,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.HTML_KPI_SecteurDominant_YoY\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"HTML_KPI_SecteurDominant_YoY\"},\"Name\":\"__MESURES.HTML_KPI_SecteurDominant_YoY\",\"NativeReferenceName\":\"HTML_KPI_SecteurDominant_YoY\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quel secteur pollue le plus cette année ?'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 112.00,
+          "width": 360.00,
+          "x": 80.00,
+          "y": 352.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"709a35e12db25ddad760\",\"layouts\":[{\"id\":0,\"position\":{\"x\":479.99999999999994,\"y\":239.99999999999997,\"z\":6000,\"width\":768,\"height\":472.00000000000006,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Temps.Année\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_Emissions.CO2_charbon_Mt)\"},{\"queryRef\":\"Sum(Fact_Emissions.CO2_gaz_Mt)\"},{\"queryRef\":\"Sum(Fact_Emissions.CO2_ciment_Mt)\"},{\"queryRef\":\"Sum(Fact_Emissions.CO2_pétrole_Mt)\"},{\"queryRef\":\"Sum(Fact_Emissions.CO2_torchage_Mt)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Emissions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"},\"Name\":\"Dim_Temps.Année\",\"NativeReferenceName\":\"Année\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_charbon_Mt\"}},\"Function\":0},\"Name\":\"Sum(Fact_Emissions.CO2_charbon_Mt)\",\"NativeReferenceName\":\"Charbon\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_gaz_Mt\"}},\"Function\":0},\"Name\":\"Sum(Fact_Emissions.CO2_gaz_Mt)\",\"NativeReferenceName\":\"Gaz\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_ciment_Mt\"}},\"Function\":0},\"Name\":\"Sum(Fact_Emissions.CO2_ciment_Mt)\",\"NativeReferenceName\":\"Ciment\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_pétrole_Mt\"}},\"Function\":0},\"Name\":\"Sum(Fact_Emissions.CO2_pétrole_Mt)\",\"NativeReferenceName\":\"Pétrole\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_torchage_Mt\"}},\"Function\":0},\"Name\":\"Sum(Fact_Emissions.CO2_torchage_Mt)\",\"NativeReferenceName\":\"Torchage\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CO2_charbon_Mt\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Fact_Emissions.CO2_charbon_Mt)\":{\"displayName\":\"Charbon\"},\"Sum(Fact_Emissions.CO2_gaz_Mt)\":{\"displayName\":\"Gaz\"},\"Sum(Fact_Emissions.CO2_ciment_Mt)\":{\"displayName\":\"Ciment\"},\"Sum(Fact_Emissions.CO2_pétrole_Mt)\":{\"displayName\":\"Pétrole\"},\"Sum(Fact_Emissions.CO2_torchage_Mt)\":{\"displayName\":\"Torchage\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Secteur'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"__MESURES\"}},\"Property\":\"Titre_Graph_Charbon\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 472.00,
+          "width": 768.00,
+          "x": 480.00,
+          "y": 240.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"80a239bb2c0483982a05\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":160,\"z\":0,\"width\":128,\"height\":80,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Temps.Année\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"},\"Name\":\"Dim_Temps.Année\",\"NativeReferenceName\":\"Année\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Temps\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Année\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2019L\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 128.00,
+          "x": 32.00,
+          "y": 160.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a317996766880931602e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":240,\"z\":10000,\"width\":360,\"height\":112,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.HTML_KPI_CO2_Charbon_YoY\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"HTML_KPI_CO2_Charbon_YoY\"},\"Name\":\"__MESURES.HTML_KPI_CO2_Charbon_YoY\",\"NativeReferenceName\":\"HTML_KPI_CO2_Charbon_YoY\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Le charbon reste un poids lourd du CO₂'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 112.00,
+          "width": 360.00,
+          "x": 8.00,
+          "y": 240.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"b6ed3cdf3071ee5a8c9c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":464,\"z\":9000,\"width\":368,\"height\":120,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.HTML_KPI_CO2_Petrole_YoY\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"HTML_KPI_CO2_Petrole_YoY\"},\"Name\":\"__MESURES.HTML_KPI_CO2_Petrole_YoY\",\"NativeReferenceName\":\"HTML_KPI_CO2_Petrole_YoY\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Le pétrole continue de faire monter la courbe'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 120.00,
+          "width": 368.00,
+          "x": 8.00,
+          "y": 464.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"b76ea56dd84a74014cd9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":176,\"z\":3000,\"width\":880,\"height\":48,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"selected\"}},{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"pages\":[{\"properties\":{\"showPage\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"e533e9ea173cab9136bb\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 880.00,
+          "x": 368.00,
+          "y": 176.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"d9352a91e672e4140085\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":8,\"z\":2000,\"width\":320,\"height\":152,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"htmlContent443BE3AD55E043BF878BED274D3A6865\",\"projections\":{\"content\":[{\"queryRef\":\"__MESURES.HTML_Score_Secteurs\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"_\",\"Entity\":\"__MESURES\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"_\"}},\"Property\":\"HTML_Score_Secteurs\"},\"Name\":\"__MESURES.HTML_Score_Secteurs\",\"NativeReferenceName\":\"HTML_Score_Secteurs\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 152.00,
+          "width": 320.00,
+          "x": 8.00,
+          "y": 8.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+table Dim_Secteurs
+	lineageTag: 24b76766-cf02-43c1-b8e2-a5f7201275a4
+
+	column Code_Secteur
+		dataType: string
+		isHidden
+		lineageTag: 7ac0db0b-c651-406a-bd0f-dbe737bae70a
+		summarizeBy: none
+		sourceColumn: Code_Secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Secteurs = m
+		mode: import
+		queryGroup: 'Tables de Dim'
+		source =
+				let
+				    Source = #table(
+				        {"Code_Secteur", "Libellé_Secteur"},
+				        {
+				            {"CO2_charbon_Mt", "Charbon"},
+				            {"CO2_pétrole_Mt", "Pétrole"},
+				            {"CO2_gaz_Mt", "Gaz"},
+				            {"CO2_ciment_Mt", "Ciment"},
+				            {"CO2_torchage_Mt", "Torchage (Flaring)"}
+				        }
+				    ),
+				    Typé = Table.TransformColumnTypes(Source, {
+				        {"Code_Secteur", type text},
+				        {"Libellé_Secteur", type text}
+				    }),
+				#"Columns removed by Measure Killer"= Table.SelectColumns(Typé,{"Code_Secteur"})
+				in
+				#"Columns removed by Measure Killer"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,39 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-FR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Tables de Dim'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup Params
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup 'Tables de faits'
+
+	annotation PBI_QueryGroupOrder = 2
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.146.705.0 (25.08)+b71502aff0a01340c88f384884ef42771068f115
+
+annotation PBI_QueryOrder = ["Metadata","Fact_Emissions","MaxAnnée","MinAnnée","Dim_Pays","Dim_Gaz","Dim_Secteurs","Fact_Emissions_Gaz","Fact_Emissions_Secteurs","Dim_Temps"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Fact_Emissions
+ref table Dim_Pays
+ref table Dim_Gaz
+ref table Dim_Secteurs
+ref table Fact_Emissions_Gaz
+ref table Fact_Emissions_Secteurs
+ref table __MESURES
+ref table Dim_Temps
+
+ref cultureInfo fr-FR
+

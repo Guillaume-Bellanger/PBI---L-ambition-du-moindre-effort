@@ -1,0 +1,72 @@
+table Fact_Emissions_Secteurs
+	lineageTag: 681d0a22-6cee-4234-a8f4-ad841bd5949a
+
+	column 'Code ISO'
+		dataType: string
+		isHidden
+		lineageTag: dbeb22ab-ba0b-4074-b022-158073062f60
+		summarizeBy: none
+		sourceColumn: Code ISO
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Année
+		dataType: int64
+		formatString: 0
+		lineageTag: 8c6fc2d2-82fb-44a5-bf86-20a297854e25
+		summarizeBy: none
+		sourceColumn: Année
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code_Secteur
+		dataType: string
+		isHidden
+		lineageTag: 4f4dc1da-8bbc-420f-b395-1d5d814a0361
+		summarizeBy: none
+		sourceColumn: Code_Secteur
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fact_Emissions_Secteurs = m
+		mode: import
+		queryGroup: 'Tables de faits'
+		source =
+				let
+				    Source = Fact_Emissions,
+				
+				    // Sélection des colonnes utiles pour les secteurs
+				    ColonnesConservees = Table.SelectColumns(Source, {
+				        "Pays", "Code ISO", "Année",
+				        "CO2_charbon_Mt", "CO2_pétrole_Mt", "CO2_gaz_Mt",
+				        "CO2_ciment_Mt", "CO2_torchage_Mt"
+				    }),
+				
+				    // Unpivot des colonnes sectorielles
+				    ColonnesEnLignes = Table.UnpivotOtherColumns(
+				        ColonnesConservees,
+				        {"Pays", "Code ISO", "Année"},
+				        "Code_Secteur",
+				        "Valeur_Secteur"
+				    ),
+				
+				    // Typage des colonnes
+				    TypesCorriges = Table.TransformColumnTypes(ColonnesEnLignes, {
+				        {"Pays", type text},
+				        {"Code ISO", type text},
+				        {"Année", Int64.Type},
+				        {"Code_Secteur", type text},
+				        {"Valeur_Secteur", type number}
+				    }),
+				#"Columns removed by Measure Killer"= Table.SelectColumns(TypesCorriges,{"Code ISO","Code_Secteur","Année"})
+				in
+				#"Columns removed by Measure Killer"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

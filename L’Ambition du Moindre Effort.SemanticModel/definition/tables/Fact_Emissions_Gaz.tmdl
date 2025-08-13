@@ -1,0 +1,72 @@
+table Fact_Emissions_Gaz
+	lineageTag: dcdc2ddf-0c2c-41ab-a066-97dbf22902ad
+
+	column 'Code ISO'
+		dataType: string
+		isHidden
+		lineageTag: 9b411439-4307-46d0-9af0-de48571bdc75
+		summarizeBy: none
+		sourceColumn: Code ISO
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Année
+		dataType: int64
+		formatString: 0
+		lineageTag: f57a5212-ae56-4daf-a7b1-eca3d36a1067
+		summarizeBy: none
+		sourceColumn: Année
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code_Gaz
+		dataType: string
+		isHidden
+		lineageTag: 07e61c60-9d68-4ed4-b01a-fd101d4caa5f
+		summarizeBy: none
+		sourceColumn: Code_Gaz
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fact_Emissions_Gaz = m
+		mode: import
+		queryGroup: 'Tables de faits'
+		source =
+				let
+				    Source = Fact_Emissions,
+				
+				    // Sélection des colonnes clés + colonnes de gaz
+				    ColonnesConservees = Table.SelectColumns(Source, {
+				        "Pays", "Code ISO", "Année",
+				        "CO2_total_Mt", "Méthane_Mt", "N2O_Mt", "GES_total_Mt",
+				        "CO2_par_habitant", "CO2_par_PIB", "CO2_consommation_Mt"
+				    }),
+				
+				    // Transformation des colonnes de gaz en lignes
+				    ColonnesEnLignes = Table.UnpivotOtherColumns(
+				        ColonnesConservees,
+				        {"Pays", "Code ISO", "Année"},
+				        "Code_Gaz",
+				        "Valeur_Gaz"
+				    ),
+				
+				    // Typage des colonnes
+				    TypesCorriges = Table.TransformColumnTypes(ColonnesEnLignes, {
+				        {"Pays", type text},
+				        {"Code ISO", type text},
+				        {"Année", Int64.Type},
+				        {"Code_Gaz", type text},
+				        {"Valeur_Gaz", type number}
+				    }),
+				#"Columns removed by Measure Killer"= Table.SelectColumns(TypesCorriges,{"Code ISO","Année","Code_Gaz"})
+				in
+				#"Columns removed by Measure Killer"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,36 @@
+table Dim_Pays
+	lineageTag: 876601cf-e0af-445b-b888-578c8458b2bb
+
+	column Pays
+		dataType: string
+		lineageTag: d735119c-fd8a-4128-99eb-3af2a616a751
+		summarizeBy: none
+		sourceColumn: Pays
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code ISO'
+		dataType: string
+		lineageTag: 6481660a-1254-498e-9264-b7974efed900
+		summarizeBy: none
+		sourceColumn: Code ISO
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Pays = m
+		mode: import
+		queryGroup: 'Tables de Dim'
+		source =
+				let
+				    Source = Fact_Emissions,
+				    #"Autres colonnes supprimées" = Table.SelectColumns(Source,{"Pays", "Code ISO"}),
+				    #"Doublons supprimés" = Table.Distinct(#"Autres colonnes supprimées", {"Code ISO"})
+				in
+				    #"Doublons supprimés"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

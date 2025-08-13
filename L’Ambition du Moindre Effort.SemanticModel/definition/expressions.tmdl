@@ -1,0 +1,32 @@
+expression Metadata =
+		let
+		    Source = Excel.Workbook(File.Contents("C:\Users\8806641L\Downloads\owid-co2-data (1).xlsx"), null, true),
+		    Metadata_Sheet = Source{[Item="Metadata",Kind="Sheet"]}[Data],
+		    #"En-têtes promus" = Table.PromoteHeaders(Metadata_Sheet, [PromoteAllScalars=true]),
+		    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus",{{"Column1", Int64.Type}, {"column", type text}, {"description", type text}, {"unit", type text}, {"source", type text}})
+		in
+		    #"Type modifié"
+	lineageTag: afbe75e3-131a-4183-97e5-05978217612c
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+/// Paramètres d'année Max
+expression MaxAnnée = 2020 meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: 71f10dee-53fe-4d7f-8fbd-e53e48dcc88e
+	queryGroup: Params
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Number
+
+/// Paramètre d'année minim
+expression MinAnnée = 1960 meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=false]
+	lineageTag: 9e91a4d6-dc93-409c-b7ae-10fdd0b52e81
+	queryGroup: Params
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Number
+

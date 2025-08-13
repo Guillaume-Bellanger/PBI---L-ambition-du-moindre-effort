@@ -1,0 +1,32 @@
+relationship AutoDetected_329a4e09-560b-4eb0-9445-89b5c5098ac7
+	fromColumn: Fact_Emissions_Gaz.Code_Gaz
+	toColumn: Dim_Gaz.Code_Gaz
+
+relationship AutoDetected_23da1bd9-fca7-4ec8-a31b-b70abeb781ea
+	fromColumn: Fact_Emissions_Secteurs.Code_Secteur
+	toColumn: Dim_Secteurs.Code_Secteur
+
+relationship 8d666c82-be9f-bb45-3b24-cd62c1eb2f06
+	fromColumn: Fact_Emissions.'Code ISO'
+	toColumn: Dim_Pays.'Code ISO'
+
+relationship fd26e1bb-7ca7-db9e-ba38-a5d3d8d8b855
+	fromColumn: Fact_Emissions_Gaz.'Code ISO'
+	toColumn: Dim_Pays.'Code ISO'
+
+relationship 5bad2dbf-b573-03d6-165e-b88139103945
+	fromColumn: Fact_Emissions_Secteurs.'Code ISO'
+	toColumn: Dim_Pays.'Code ISO'
+
+relationship AutoDetected_d02710ad-4076-45ef-b057-a20bbd73e625
+	fromColumn: Fact_Emissions.Année
+	toColumn: Dim_Temps.Année
+
+relationship AutoDetected_9d398e28-08bc-4d8c-b76b-7f131e5e1c15
+	fromColumn: Fact_Emissions_Gaz.Année
+	toColumn: Dim_Temps.Année
+
+relationship AutoDetected_4296e8f3-4ad6-4a63-a47a-af9f1d346eef
+	fromColumn: Fact_Emissions_Secteurs.Année
+	toColumn: Dim_Temps.Année
+

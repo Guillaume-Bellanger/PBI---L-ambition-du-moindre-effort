@@ -1,0 +1,5955 @@
+cultureInfo fr-FR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "fact_emission": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact emission": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Fact_Emissions": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "emission": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fact production": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "fact emanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "fact secretion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "fact radiation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "production": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "emanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "secretion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "radiation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fact release": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fact discharge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.pay": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "Pays"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pay": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "salary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reimbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "compensation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "remuneration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "emolument": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "stipend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "wage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "recompense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "année": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.code_ISO": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "Code ISO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "code ISO": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ISO": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "id iso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "key iso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "Population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.CO2_ciment_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "CO2_ciment_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CO2 ciment mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CO2_ciment_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.CO2_total_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "CO2_total_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CO2 total mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CO2_total_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "co2 aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "co2 overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.CO2_par_habitant": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "CO2_par_habitant"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CO2 par habitant": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CO2_par_habitant": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "habitant": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "par habitant": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.CO2_par_PIB": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "CO2_par_PIB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CO2 par PIB": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CO2_par_PIB": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "PIB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "par PIB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.CO2_charbon_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "CO2_charbon_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CO2 charbon mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CO2_charbon_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.CO2_consommation_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "CO2_consommation_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CO2 consommation mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CO2_consommation_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.CO2_torchage_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "CO2_torchage_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CO2 torchage mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CO2_torchage_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.CO2_gaz_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "CO2_gaz_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CO2 gaz mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CO2_gaz_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.méthane_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "Méthane_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "méthane mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Méthane_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.N2O_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "N2O_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "N2O mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "N2O_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.CO2_pétrole_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "CO2_pétrole_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CO2 pétrole mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CO2_pétrole_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emission.GES_total_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions",
+			          "ConceptualProperty": "GES_total_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "GES total mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "GES_total_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ges aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "ges overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_pay": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Pays"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim pay": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dim_Pays": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim salary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim reimbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim compensation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim remuneration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim emolument": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim stipend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim wage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim recompense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim hire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "dim_pay.pay": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Pays",
+			          "ConceptualProperty": "Pays"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pay": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "salary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reimbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "compensation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "remuneration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "emolument": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "stipend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "wage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "recompense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dim_pay.code_ISO": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Pays",
+			          "ConceptualProperty": "Code ISO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "code ISO": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ISO": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "id iso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "key iso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_gaz": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Gaz"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim gaz": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dim_Gaz": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_gaz.code_gaz": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Gaz",
+			          "ConceptualProperty": "Code_Gaz"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "code gaz": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Code_Gaz": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "id gaz": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "key gaz": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_secteur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Secteurs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim secteur": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dim_Secteurs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_secteur.code_secteur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Secteurs",
+			          "ConceptualProperty": "Code_Secteur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "code secteur": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Code_Secteur": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "id secteur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "key secteur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emissions_gaz": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions_Gaz"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact emissions gaz": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fact emission gaz": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Fact_Emissions_Gaz": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emissions_gaz.code_ISO": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions_Gaz",
+			          "ConceptualProperty": "Code ISO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "code ISO": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ISO": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "id iso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "key iso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emissions_gaz.année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions_Gaz",
+			          "ConceptualProperty": "Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "année": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emissions_gaz.code_gaz": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions_Gaz",
+			          "ConceptualProperty": "Code_Gaz"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "code gaz": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Code_Gaz": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "id gaz": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "key gaz": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emissions_secteur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions_Secteurs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact emissions secteur": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fact emission secteur": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Fact_Emissions_Secteurs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emissions_secteur.code_ISO": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions_Secteurs",
+			          "ConceptualProperty": "Code ISO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "code ISO": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ISO": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "id iso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "key iso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emissions_secteur.année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions_Secteurs",
+			          "ConceptualProperty": "Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "année": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_emissions_secteur.code_secteur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Fact_Emissions_Secteurs",
+			          "ConceptualProperty": "Code_Secteur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "code secteur": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Code_Secteur": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "id secteur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "key secteur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "__mesure": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.column": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Column"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "column": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pilaster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pillar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "support": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "buttress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "underpinning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_total_CO2_mt_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_Total_CO2_Mt_HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI total CO2 mt HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_Total_CO2_Mt_HTML": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "mt HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CO2 mt HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total CO2 mt HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "kpi aggregate co2 mt html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "kpi overall co2 mt html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "aggregate co2 mt html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall co2 mt html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_CO2_per_capita_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_CO2_per_capita_HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI CO2 per capita HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_CO2_per_capita_HTML": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_total_GES_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_Total_GES_HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI total GES HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_Total_GES_HTML": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "GES HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total GES HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "kpi aggregate ges html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "kpi overall ges html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "aggregate ges html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall ges html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_peak_emission_year_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_Peak_Emission_Year_HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI peak emission year HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_Peak_Emission_Year_HTML": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "year HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "emission year HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "peak emission year HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "kpi peak emission yr html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "peak emission yr html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "emission yr html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "yr html": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_classement_CO2_pays_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_Classement_CO2_Pays_HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI classement CO2 pays HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_Classement_CO2_Pays_HTML": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_CO2_par_habitant_pays_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_CO2_par_Habitant_Pays_HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI CO2 par habitant pays HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_CO2_par_Habitant_Pays_HTML": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pays HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "habitant pays HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "par habitant pays HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CO2 par habitant pays HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_gaz_dominant_pays_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_Gaz_Dominant_Pays_HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI gaz dominant pays HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_Gaz_Dominant_Pays_HTML": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_secteur_dominant_pays_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_Secteur_Dominant_Pays_HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI secteur dominant pays HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_Secteur_Dominant_Pays_HTML": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.top_5_pollueurs_HTML_dyn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Top5_Pollueurs_HTML_Dyn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top 5 pollueurs HTML dyn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Top5_Pollueurs_HTML_Dyn": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "best 5 pollueur html dyn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "first 5 pollueur html dyn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "leading 5 pollueur html dyn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "maximum 5 pollueur html dyn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "peak 5 pollueur html dyn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "upper 5 pollueur html dyn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.total_CO2_tonnes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Total_CO2_Tonnes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total CO2 tonnes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_CO2_Tonnes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "tonnes": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CO2 tonnes": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate co2 tonne": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall co2 tonne": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.top_5_moins_emetteurs_HTML_dyn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Top5_MoinsEmetteurs_HTML_Dyn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top 5 moins emetteurs HTML dyn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Top5_MoinsEmetteurs_HTML_Dyn": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.top_5_pollueurs_HTML_dyn_test": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Top5_Pollueurs_HTML_Dyn_test"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top 5 pollueurs HTML dyn test": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Top5_Pollueurs_HTML_Dyn_test": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_CO2_total_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_CO2_total_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI CO2 total mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_CO2_total_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "kpi co2 aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "kpi co2 overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "CO₂": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_CH4_total_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_CH4_total_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI CH4 total mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_CH4_total_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CH4 total mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "kpi ch4 aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "kpi ch4 overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "ch4 aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "ch4 overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "CH₄": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_N2O_total_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_N2O_total_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI N2O total mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_N2O_total_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "N2O total mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "kpi n2o aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "kpi n2o overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "n2o aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "n2o overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "N₂O": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_GES_total_mt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_GES_total_Mt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI GES total mt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_GES_total_Mt": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total mt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "kpi ges aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "kpi ges overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "aggregate mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall mt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.KPI_CO2_delta_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "KPI_CO2_delta_pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI CO2 delta pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_CO2_delta_pct": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_temp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Temps"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim temp": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dim_Temps": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "temp": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dim fill-in": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dim stand-in": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fill-in": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stand-in": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dim_temp.année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Temps",
+			          "ConceptualProperty": "Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "année": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.bloc_narratif_par_gaz": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Bloc_Narratif_Par_Gaz"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "bloc narratif par gaz": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Bloc_Narratif_Par_Gaz": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.bloc_boutons_onglets_gaz": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Bloc_Boutons_Onglets_Gaz"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "bloc boutons onglets gaz": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Bloc_Boutons_Onglets_Gaz": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.titre_impactant_accueil": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Titre_Impactant_Accueil"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titre impactant accueil": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Titre_Impactant_Accueil": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.score_climatique_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Score_Climatique_HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "score climatique HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Score_Climatique_HTML": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.HTML_score_pays_climatique": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "HTML_Score_Pays_Climatique"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "HTML score pays climatique": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HTML_Score_Pays_Climatique": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.HTML_score_gaz_monde": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "HTML_Score_Gaz_Monde"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "HTML score gaz monde": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HTML_Score_Gaz_Monde": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.titre_dynamique_N2O": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Titre_Dynamique_N2O"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titre dynamique N2O": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Titre_Dynamique_N2O": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.titre_dynamique_gaz_3": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Titre_Dynamique_Gaz3"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titre dynamique gaz 3": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Titre_Dynamique_Gaz3": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.HTML_score_secteurs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "HTML_Score_Secteurs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "HTML score secteurs": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HTML_Score_Secteurs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.HTML_KPI_CO2_charbon_yo_Y": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "HTML_KPI_CO2_Charbon_YoY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "HTML KPI CO2 charbon yo Y": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HTML_KPI_CO2_Charbon_YoY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.HTML_KPI_CO2_petrole_yo_Y": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "HTML_KPI_CO2_Petrole_YoY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "HTML KPI CO2 petrole yo Y": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HTML_KPI_CO2_Petrole_YoY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.HTML_KPI_secteur_dominant_yo_Y": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "HTML_KPI_SecteurDominant_YoY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "HTML KPI secteur dominant yo Y": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HTML_KPI_SecteurDominant_YoY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.HTML_KPI_top_3_secteurs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "HTML_KPI_Top3_Secteurs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "HTML KPI top 3 secteurs": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HTML_KPI_Top3_Secteurs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "html kpi best 3 secteur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "html kpi first 3 secteur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "html kpi leading 3 secteur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "html kpi maximum 3 secteur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "html kpi peak 3 secteur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "html kpi upper 3 secteur": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.titre_graph_charbon": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Titre_Graph_Charbon"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titre graph charbon": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Titre_Graph_Charbon": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.top_10_CO2_share": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Top10_CO2_Share"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "top 10 CO2 share": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Top10_CO2_Share": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CO2 share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "10 CO2 share": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "best 10 co2 share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "first 10 co2 share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "leading 10 co2 share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "maximum 10 co2 share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "peak 10 co2 share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "upper 10 co2 share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "top 10 co2 part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "top 10 co2 portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "top 10 co2 segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "top 10 co2 cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.carte_CO2_par_PIB": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Carte_CO2_par_PIB"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "carte CO2 par PIB": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Carte_CO2_par_PIB": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "PIB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "par PIB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.tooltip_CO2_par_habitant_HTML": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "Tooltip_CO2_par_Habitant_HTML"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tooltip CO2 par habitant HTML": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tooltip_CO2_par_Habitant_HTML": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "habitant HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "par habitant HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CO2 par habitant HTML": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity___mesure.CO_par_habitant_t_hab": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "__MESURES",
+			          "ConceptualProperty": "CO₂ par habitant (t/hab)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CO₂ par habitant (t/hab)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CO₂ par habitant": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "CO₂ par habitant (t": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CO ₂ par habitant ( t hab )": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hab)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "fact_emission_has_dim_temp": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "dim_temp": {
+			          "Target": {
+			            "Entity": "dim_temp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "dim_temp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_dim_temps"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_temp"
+			            },
+			            "Object": {
+			              "Role": "fact_emission"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_temps_have_fact_emissions"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_dim_pay": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "dim_pay": {
+			          "Target": {
+			            "Entity": "dim_pay"
+			          },
+			          "Nouns": [
+			            {
+			              "ISO": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "dim_pay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_dim_pays"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_pay"
+			            },
+			            "Object": {
+			              "Role": "fact_emission"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_pays_have_fact_emissions"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_entity___mesure_CO_par_habitant_t_hab": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "entity___mesure.CO_par_habitant_t_hab": {
+			          "Target": {
+			            "Entity": "entity___mesure.CO_par_habitant_t_hab"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.CO_par_habitant_t_hab"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_CO_par_habitant_t_hab"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_tooltip_CO2_par_habitant_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.tooltip_CO2_par_habitant_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.tooltip_CO2_par_habitant_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.tooltip_CO2_par_habitant_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_tooltip_CO2_par_habitant_HTML"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_entity___mesure_carte_CO2_par_PIB": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "entity___mesure.carte_CO2_par_PIB": {
+			          "Target": {
+			            "Entity": "entity___mesure.carte_CO2_par_PIB"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.carte_CO2_par_PIB"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_carte_CO2_par_PIB"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_top_10_CO2_share": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.top_10_CO2_share": {
+			          "Target": {
+			            "Entity": "entity___mesure.top_10_CO2_share"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.top_10_CO2_share"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_top_10_CO2_share"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_titre_graph_charbon": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.titre_graph_charbon": {
+			          "Target": {
+			            "Entity": "entity___mesure.titre_graph_charbon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.titre_graph_charbon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_titre_graph_charbon"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_HTML_KPI_top_3_secteurs": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.HTML_KPI_top_3_secteurs": {
+			          "Target": {
+			            "Entity": "entity___mesure.HTML_KPI_top_3_secteurs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.HTML_KPI_top_3_secteurs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_HTML_KPI_top_3_secteurs"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_HTML_KPI_secteur_dominant_yo_Y": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.HTML_KPI_secteur_dominant_yo_Y": {
+			          "Target": {
+			            "Entity": "entity___mesure.HTML_KPI_secteur_dominant_yo_Y"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.HTML_KPI_secteur_dominant_yo_Y"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_HTML_KPI_secteur_dominant_yo_Y"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_HTML_KPI_CO2_petrole_yo_Y": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.HTML_KPI_CO2_petrole_yo_Y": {
+			          "Target": {
+			            "Entity": "entity___mesure.HTML_KPI_CO2_petrole_yo_Y"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.HTML_KPI_CO2_petrole_yo_Y"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_HTML_KPI_CO2_petrole_yo_Y"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_HTML_KPI_CO2_charbon_yo_Y": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.HTML_KPI_CO2_charbon_yo_Y": {
+			          "Target": {
+			            "Entity": "entity___mesure.HTML_KPI_CO2_charbon_yo_Y"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.HTML_KPI_CO2_charbon_yo_Y"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_HTML_KPI_CO2_charbon_yo_Y"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_HTML_score_secteurs": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.HTML_score_secteurs": {
+			          "Target": {
+			            "Entity": "entity___mesure.HTML_score_secteurs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.HTML_score_secteurs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_HTML_score_secteurs"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_titre_dynamique_gaz_3": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.titre_dynamique_gaz_3": {
+			          "Target": {
+			            "Entity": "entity___mesure.titre_dynamique_gaz_3"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.titre_dynamique_gaz_3"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_titre_dynamique_gaz_3"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_titre_dynamique_N2O": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.titre_dynamique_N2O": {
+			          "Target": {
+			            "Entity": "entity___mesure.titre_dynamique_N2O"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.titre_dynamique_N2O"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_titre_dynamique_N2O"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_HTML_score_gaz_monde": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.HTML_score_gaz_monde": {
+			          "Target": {
+			            "Entity": "entity___mesure.HTML_score_gaz_monde"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.HTML_score_gaz_monde"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_HTML_score_gaz_monde"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_HTML_score_pays_climatique": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.HTML_score_pays_climatique": {
+			          "Target": {
+			            "Entity": "entity___mesure.HTML_score_pays_climatique"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.HTML_score_pays_climatique"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_HTML_score_pays_climatique"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_score_climatique_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.score_climatique_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.score_climatique_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.score_climatique_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_score_climatique_HTML"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_titre_impactant_accueil": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.titre_impactant_accueil": {
+			          "Target": {
+			            "Entity": "entity___mesure.titre_impactant_accueil"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.titre_impactant_accueil"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_titre_impactant_accueil"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_bloc_boutons_onglets_gaz": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.bloc_boutons_onglets_gaz": {
+			          "Target": {
+			            "Entity": "entity___mesure.bloc_boutons_onglets_gaz"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.bloc_boutons_onglets_gaz"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_bloc_boutons_onglets_gaz"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_bloc_narratif_par_gaz": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.bloc_narratif_par_gaz": {
+			          "Target": {
+			            "Entity": "entity___mesure.bloc_narratif_par_gaz"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.bloc_narratif_par_gaz"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_bloc_narratif_par_gaz"
+			        }
+			      ]
+			    },
+			    "dim_temp_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Temps"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_temp": {
+			          "Target": {
+			            "Entity": "dim_temp"
+			          }
+			        },
+			        "dim_temp.date": {
+			          "Target": {
+			            "Entity": "dim_temp.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_temp"
+			            },
+			            "Object": {
+			              "Role": "dim_temp.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_temps_have_dates"
+			        }
+			      ]
+			    },
+			    "dim_temp_has_année": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Temps"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_temp": {
+			          "Target": {
+			            "Entity": "dim_temp"
+			          }
+			        },
+			        "dim_temp.année": {
+			          "Target": {
+			            "Entity": "dim_temp.année"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_temp"
+			            },
+			            "Object": {
+			              "Role": "dim_temp.année"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_temps_have_années"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_KPI_CO2_delta_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.KPI_CO2_delta_pct": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_CO2_delta_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_CO2_delta_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_KPI_CO2_delta_pct"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_entity___mesure_KPI_GES_total_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "entity___mesure.KPI_GES_total_mt": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_GES_total_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_GES_total_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_KPI_GES_total_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_entity___mesure_KPI_N2O_total_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "entity___mesure.KPI_N2O_total_mt": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_N2O_total_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_N2O_total_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_KPI_N2O_total_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_entity___mesure_KPI_CH4_total_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "entity___mesure.KPI_CH4_total_mt": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_CH4_total_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_CH4_total_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_KPI_CH4_total_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_entity___mesure_KPI_CO2_total_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "entity___mesure.KPI_CO2_total_mt": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_CO2_total_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_CO2_total_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_KPI_CO2_total_mt"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_top_5_pollueurs_HTML_dyn_test": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.top_5_pollueurs_HTML_dyn_test": {
+			          "Target": {
+			            "Entity": "entity___mesure.top_5_pollueurs_HTML_dyn_test"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.top_5_pollueurs_HTML_dyn_test"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_top_5_pollueurs_HTML_dyn_test"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_top_5_moins_emetteurs_HTML_dyn": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.top_5_moins_emetteurs_HTML_dyn": {
+			          "Target": {
+			            "Entity": "entity___mesure.top_5_moins_emetteurs_HTML_dyn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.top_5_moins_emetteurs_HTML_dyn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_top_5_moins_emetteurs_HTML_dyn"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_entity___mesure_total_CO2_tonnes": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "entity___mesure.total_CO2_tonnes": {
+			          "Target": {
+			            "Entity": "entity___mesure.total_CO2_tonnes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.total_CO2_tonnes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_total_CO2_tonnes"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_top_5_pollueurs_HTML_dyn": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.top_5_pollueurs_HTML_dyn": {
+			          "Target": {
+			            "Entity": "entity___mesure.top_5_pollueurs_HTML_dyn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.top_5_pollueurs_HTML_dyn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_top_5_pollueurs_HTML_dyn"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_KPI_secteur_dominant_pays_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.KPI_secteur_dominant_pays_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_secteur_dominant_pays_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_secteur_dominant_pays_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_KPI_secteur_dominant_pays_HTML"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_KPI_gaz_dominant_pays_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.KPI_gaz_dominant_pays_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_gaz_dominant_pays_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_gaz_dominant_pays_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_KPI_gaz_dominant_pays_HTML"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_KPI_CO2_par_habitant_pays_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.KPI_CO2_par_habitant_pays_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_CO2_par_habitant_pays_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_CO2_par_habitant_pays_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_KPI_CO2_par_habitant_pays_HTML"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_KPI_classement_CO2_pays_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.KPI_classement_CO2_pays_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_classement_CO2_pays_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_classement_CO2_pays_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_KPI_classement_CO2_pays_HTML"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_entity___mesure_KPI_peak_emission_year_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "entity___mesure.KPI_peak_emission_year_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_peak_emission_year_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_peak_emission_year_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_KPI_peak_emission_year_HTML"
+			        }
+			      ]
+			    },
+			    "dim_temp_has_entity___mesure_KPI_peak_emission_year_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Temps"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_temp": {
+			          "Target": {
+			            "Entity": "dim_temp"
+			          }
+			        },
+			        "entity___mesure.KPI_peak_emission_year_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_peak_emission_year_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_temp"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_peak_emission_year_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_temps_have_KPI_peak_emission_year_HTML"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_KPI_total_GES_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.KPI_total_GES_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_total_GES_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_total_GES_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_KPI_total_GES_HTML"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_KPI_CO2_per_capita_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.KPI_CO2_per_capita_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_CO2_per_capita_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_CO2_per_capita_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_KPI_CO2_per_capita_HTML"
+			        }
+			      ]
+			    },
+			    "entity___mesure_has_KPI_total_CO2_mt_HTML": {
+			      "Binding": {
+			        "ConceptualEntity": "__MESURES"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity___mesure": {
+			          "Target": {
+			            "Entity": "entity___mesure"
+			          }
+			        },
+			        "entity___mesure.KPI_total_CO2_mt_HTML": {
+			          "Target": {
+			            "Entity": "entity___mesure.KPI_total_CO2_mt_HTML"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity___mesure"
+			            },
+			            "Object": {
+			              "Role": "entity___mesure.KPI_total_CO2_mt_HTML"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing__mesures_have_KPI_total_CO2_mt_HTML"
+			        }
+			      ]
+			    },
+			    "fact_emissions_secteur_has_valeur_secteur": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions_Secteurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emissions_secteur": {
+			          "Target": {
+			            "Entity": "fact_emissions_secteur"
+			          }
+			        },
+			        "fact_emissions_secteur.valeur_secteur": {
+			          "Target": {
+			            "Entity": "fact_emissions_secteur.valeur_secteur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emissions_secteur"
+			            },
+			            "Object": {
+			              "Role": "fact_emissions_secteur.valeur_secteur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_secteurs_have_valeur_secteurs"
+			        }
+			      ]
+			    },
+			    "fact_emissions_secteur_has_pay": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions_Secteurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emissions_secteur": {
+			          "Target": {
+			            "Entity": "fact_emissions_secteur"
+			          }
+			        },
+			        "fact_emissions_secteur.pay": {
+			          "Target": {
+			            "Entity": "fact_emissions_secteur.pay"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emissions_secteur"
+			            },
+			            "Object": {
+			              "Role": "fact_emissions_secteur.pay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_secteurs_have_pays"
+			        }
+			      ]
+			    },
+			    "fact_emissions_gaz_has_valeur_gaz": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions_Gaz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emissions_gaz": {
+			          "Target": {
+			            "Entity": "fact_emissions_gaz"
+			          }
+			        },
+			        "fact_emissions_gaz.valeur_gaz": {
+			          "Target": {
+			            "Entity": "fact_emissions_gaz.valeur_gaz"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emissions_gaz"
+			            },
+			            "Object": {
+			              "Role": "fact_emissions_gaz.valeur_gaz"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_gazzes_have_valeur_gazzes"
+			        }
+			      ]
+			    },
+			    "fact_emissions_gaz_has_pay": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions_Gaz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emissions_gaz": {
+			          "Target": {
+			            "Entity": "fact_emissions_gaz"
+			          }
+			        },
+			        "fact_emissions_gaz.pay": {
+			          "Target": {
+			            "Entity": "fact_emissions_gaz.pay"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emissions_gaz"
+			            },
+			            "Object": {
+			              "Role": "fact_emissions_gaz.pay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_gazzes_have_pays"
+			        }
+			      ]
+			    },
+			    "dim_secteur_has_libellé_secteur": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Secteurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_secteur": {
+			          "Target": {
+			            "Entity": "dim_secteur"
+			          }
+			        },
+			        "dim_secteur.libellé_secteur": {
+			          "Target": {
+			            "Entity": "dim_secteur.libellé_secteur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_secteur"
+			            },
+			            "Object": {
+			              "Role": "dim_secteur.libellé_secteur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_secteurs_have_libellé_secteurs"
+			        }
+			      ]
+			    },
+			    "dim_gaz_has_unité": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Gaz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_gaz": {
+			          "Target": {
+			            "Entity": "dim_gaz"
+			          }
+			        },
+			        "dim_gaz.unité": {
+			          "Target": {
+			            "Entity": "dim_gaz.unité"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_gaz"
+			            },
+			            "Object": {
+			              "Role": "dim_gaz.unité"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_gazzes_have_unité"
+			        }
+			      ]
+			    },
+			    "dim_gaz_has_libellé_gaz": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Gaz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_gaz": {
+			          "Target": {
+			            "Entity": "dim_gaz"
+			          }
+			        },
+			        "dim_gaz.libellé_gaz": {
+			          "Target": {
+			            "Entity": "dim_gaz.libellé_gaz"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_gaz"
+			            },
+			            "Object": {
+			              "Role": "dim_gaz.libellé_gaz"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_gazzes_have_libellé_gazzes"
+			        }
+			      ]
+			    },
+			    "dim_pay_has_code_ISO": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Pays"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_pay": {
+			          "Target": {
+			            "Entity": "dim_pay"
+			          }
+			        },
+			        "dim_pay.code_ISO": {
+			          "Target": {
+			            "Entity": "dim_pay.code_ISO"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_pay"
+			            },
+			            "Object": {
+			              "Role": "dim_pay.code_ISO"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_pays_have_code_ISO"
+			        }
+			      ]
+			    },
+			    "dim_pay_has_pay": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Pays"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_pay": {
+			          "Target": {
+			            "Entity": "dim_pay"
+			          }
+			        },
+			        "dim_pay.pay": {
+			          "Target": {
+			            "Entity": "dim_pay.pay"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_pay"
+			            },
+			            "Object": {
+			              "Role": "dim_pay.pay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_pays_have_pays"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_efficacité_CO2": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.efficacité_CO2": {
+			          "Target": {
+			            "Entity": "fact_emission.efficacité_CO2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.efficacité_CO2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_efficacité_CO2"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_secteur_dominant_CO2": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.secteur_dominant_CO2": {
+			          "Target": {
+			            "Entity": "fact_emission.secteur_dominant_CO2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.secteur_dominant_CO2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_secteur_dominant_CO2"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_catégorie_CO2": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.catégorie_CO2": {
+			          "Target": {
+			            "Entity": "fact_emission.catégorie_CO2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.catégorie_CO2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_catégorie_CO2"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_GES_total_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.GES_total_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.GES_total_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.GES_total_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_GES_total_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_CO2_pétrole_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.CO2_pétrole_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.CO2_pétrole_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.CO2_pétrole_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_CO2_pétrole_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_N2O_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.N2O_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.N2O_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.N2O_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_N2O_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_méthane_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.méthane_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.méthane_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.méthane_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_méthane_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_CO2_gaz_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.CO2_gaz_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.CO2_gaz_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.CO2_gaz_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_CO2_gaz_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_CO2_torchage_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.CO2_torchage_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.CO2_torchage_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.CO2_torchage_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_CO2_torchage_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_CO2_consommation_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.CO2_consommation_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.CO2_consommation_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.CO2_consommation_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_CO2_consommation_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_CO2_charbon_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.CO2_charbon_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.CO2_charbon_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.CO2_charbon_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_CO2_charbon_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_CO2_par_PIB": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.CO2_par_PIB": {
+			          "Target": {
+			            "Entity": "fact_emission.CO2_par_PIB"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.CO2_par_PIB"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_CO2_par_PIBs"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_CO2_par_habitant": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.CO2_par_habitant": {
+			          "Target": {
+			            "Entity": "fact_emission.CO2_par_habitant"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.CO2_par_habitant"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_CO2_par_habitants"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_Croissance_CO2_": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.Croissance_CO2_": {
+			          "Target": {
+			            "Entity": "fact_emission.Croissance_CO2_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.Croissance_CO2_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_Croissance_CO2_"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_croissance_CO2_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.croissance_CO2_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.croissance_CO2_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.croissance_CO2_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_croissance_CO2_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_CO2_total_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.CO2_total_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.CO2_total_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.CO2_total_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_CO2_total_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_CO2_ciment_mt": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.CO2_ciment_mt": {
+			          "Target": {
+			            "Entity": "fact_emission.CO2_ciment_mt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.CO2_ciment_mt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_CO2_ciment_mt"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_pib_usd": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.pib_usd": {
+			          "Target": {
+			            "Entity": "fact_emission.pib_usd"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.pib_usd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_pib_usd"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_population": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.population": {
+			          "Target": {
+			            "Entity": "fact_emission.population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_populations"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Adjectives": [
+			              {
+			                "large": {
+			                  "State": "Generated"
+			                }
+			              },
+			              {
+			                "big": {
+			                  "State": "Generated"
+			                }
+			              },
+			              {
+			                "populated": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "small": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "fact_emission.population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "population_indicates_how_large_fact_emissions_are"
+			        }
+			      ]
+			    },
+			    "fact_emission_has_pay": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emission": {
+			          "Target": {
+			            "Entity": "fact_emission"
+			          }
+			        },
+			        "fact_emission.pay": {
+			          "Target": {
+			            "Entity": "fact_emission.pay"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emission"
+			            },
+			            "Object": {
+			              "Role": "fact_emission.pay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_have_pays"
+			        }
+			      ]
+			    },
+			    "fact_emissions_gaz_has_dim_gaz": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions_Gaz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emissions_gaz": {
+			          "Target": {
+			            "Entity": "fact_emissions_gaz"
+			          }
+			        },
+			        "dim_gaz": {
+			          "Target": {
+			            "Entity": "dim_gaz"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emissions_gaz"
+			            },
+			            "Object": {
+			              "Role": "dim_gaz"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_gazzes_have_dim_gazzes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_gaz"
+			            },
+			            "Object": {
+			              "Role": "fact_emissions_gaz"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_gazzes_have_fact_emissions_gazzes"
+			        }
+			      ]
+			    },
+			    "fact_emissions_gaz_has_dim_pay": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions_Gaz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emissions_gaz": {
+			          "Target": {
+			            "Entity": "fact_emissions_gaz"
+			          }
+			        },
+			        "dim_pay": {
+			          "Target": {
+			            "Entity": "dim_pay"
+			          },
+			          "Nouns": [
+			            {
+			              "ISO": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emissions_gaz"
+			            },
+			            "Object": {
+			              "Role": "dim_pay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_gazzes_have_dim_pays"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_pay"
+			            },
+			            "Object": {
+			              "Role": "fact_emissions_gaz"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_pays_have_fact_emissions_gazzes"
+			        }
+			      ]
+			    },
+			    "fact_emissions_gaz_has_dim_temp": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions_Gaz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emissions_gaz": {
+			          "Target": {
+			            "Entity": "fact_emissions_gaz"
+			          }
+			        },
+			        "dim_temp": {
+			          "Target": {
+			            "Entity": "dim_temp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emissions_gaz"
+			            },
+			            "Object": {
+			              "Role": "dim_temp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_gazzes_have_dim_temps"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_temp"
+			            },
+			            "Object": {
+			              "Role": "fact_emissions_gaz"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_temps_have_fact_emissions_gazzes"
+			        }
+			      ]
+			    },
+			    "fact_emissions_secteur_has_dim_secteur": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions_Secteurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emissions_secteur": {
+			          "Target": {
+			            "Entity": "fact_emissions_secteur"
+			          }
+			        },
+			        "dim_secteur": {
+			          "Target": {
+			            "Entity": "dim_secteur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emissions_secteur"
+			            },
+			            "Object": {
+			              "Role": "dim_secteur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_secteurs_have_dim_secteurs"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_secteur"
+			            },
+			            "Object": {
+			              "Role": "fact_emissions_secteur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_secteurs_have_fact_emissions_secteurs"
+			        }
+			      ]
+			    },
+			    "fact_emissions_secteur_has_dim_pay": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions_Secteurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emissions_secteur": {
+			          "Target": {
+			            "Entity": "fact_emissions_secteur"
+			          }
+			        },
+			        "dim_pay": {
+			          "Target": {
+			            "Entity": "dim_pay"
+			          },
+			          "Nouns": [
+			            {
+			              "ISO": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emissions_secteur"
+			            },
+			            "Object": {
+			              "Role": "dim_pay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_secteurs_have_dim_pays"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_pay"
+			            },
+			            "Object": {
+			              "Role": "fact_emissions_secteur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_pays_have_fact_emissions_secteurs"
+			        }
+			      ]
+			    },
+			    "fact_emissions_secteur_has_dim_temp": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_Emissions_Secteurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_emissions_secteur": {
+			          "Target": {
+			            "Entity": "fact_emissions_secteur"
+			          }
+			        },
+			        "dim_temp": {
+			          "Target": {
+			            "Entity": "dim_temp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_emissions_secteur"
+			            },
+			            "Object": {
+			              "Role": "dim_temp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_emissions_secteurs_have_dim_temps"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_temp"
+			            },
+			            "Object": {
+			              "Role": "fact_emissions_secteur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_temps_have_fact_emissions_secteurs"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

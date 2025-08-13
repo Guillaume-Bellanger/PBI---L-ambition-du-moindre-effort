@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "L’Ambition du Moindre Effort"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "945c9845-dd1d-4010-873a-3c04e5245e66"
+  }
+}
